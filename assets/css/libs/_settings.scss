@@ -16,20 +16,20 @@
 // a-z viewports. Place where design should change, not always on device widths
 // Hat-tip to @hereinthehive for getting us thinking about naming suggestions
 
-$a-vp								: 300px;	// first viewport 
-$b-vp								: 420px;	// up one
-$c-vp								: 600px;	// up two
-$d-vp								: 900px;	// up three
-$e-vp								: 1100px;	// up four
-$f-vp								: 1300px;	// up five
-$ie-fixed-vp						: 980px;    // Viewport for IE fixed width
+$a								: 300px;	// first viewport 
+$b								: 420px;	// up one
+$c								: 600px;	// up two
+$d								: 780px;	// up three
+$e								: 900px;	// up four
+$f								: 1300px;	// up five
+$ie-fixed						: 980px;    // Viewport for IE fixed width
 
-$max-vp 							: $f-vp; 	// max viewport. Syntactically makes for a nicer option
+$max 							: $f; 	// max viewport. Syntactically makes for a nicer option
 
 
 // At some point, you'll want to switch from a one column view to multi-column.
 // This variable is used in the grid to dictate when you make that switch
-$start-columns 						: $b-vp;
+$start-columns 						: $b;
 
 
 // ------------------------------------------------------------
@@ -54,11 +54,13 @@ $secondary							: #00A7B8;
 $body-color 						: #fff;
 $base-color							: $macy-grey;
 $heading-color						: $jack-black;
-$hightlight-color 					: $betty-blue;
+$hightlight-color 					: $secondary;
 
-$action								: $agent-orange;
-$action-respond						: $al-green;
+$action								: $secondary;
+$action-respond						: darken($secondary, 10%);
 
+$dark 								: #000;
+$light 								: #fff;
 
 // ------------------------------------------------------------
 // :: Typesizes/scale

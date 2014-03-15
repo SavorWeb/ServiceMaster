@@ -6,7 +6,7 @@
   "customRubyPath": null,
   "customTodos": [
       {
-      "fileTypes": "php",
+      "fileTypes": ".php",
       "regex": "(?<=/[*] TODO:).*?(?=[*]/)"
       }
     ],
