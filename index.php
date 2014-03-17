@@ -5,7 +5,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="initial-scale=1">
+		<meta name="viewport" content="initial-scale=1, user-scalable=no">
 		<title>ServiceMaster Restore</title>
 		<link href="assets/css/screen.min.css" rel="stylesheet" type="text/css" media="all"/>
 		<!-- <link rel="shortcut icon" type="image/ico" href="favicon.ico" /> -->
@@ -18,9 +18,9 @@
 
 	<header>
 		<div class="wrapper">
-			<object class="logo" type="image/svg+xml" data="assets/img/logo.svg" alt="ServiceMaster Logo"></object>
+			<object class="logo" type="image/svg+xml" data="assets/img/logo.svg" alt="SevrviceMaster Logo"></object>
 
-			<button href="#" type="button" role="button" class="nav-toggle closed lines-button x2"><span class="lines"></span></button>
+			<button type="button" role="button" id="nav-toggle" class="lines-button x2"><span class="lines"></span></button>
 			
 			<nav class="nav-collapse">
 				<ul>
@@ -45,14 +45,8 @@
 	  </div>
 	</div>
 
-<!-- 	<div style='text-align:center;padding-top:20px;'>
-		<button onclick='mySwipe.prev()'>prev</button> 
-		<button onclick='mySwipe.next()'>next</button>
-	</div> -->
-
 	<div class="padded">
-		
-		<!-- TODO: Php this to above the NAV -->
+
 		<div class="callnow">
 			<h1>We're here for you 24/7</h1>
 			<a class="btn" href="tel+2086676633">Idaho Hotline: (208) 667-6633</a>
@@ -67,7 +61,7 @@
 			</figure>
 			<figure>
 				<img src="http://www.placehold.it/400x175" alt="">
-				<h2>Testamonials</h2>
+				<h2>Testimonials</h2>
 			</figure>
 			
 			<a href="#" class="tips">
@@ -91,11 +85,21 @@
 			<img src="http://www.placehold.it/500x300" alt="">
 		</section>
 
-	</div> <!-- END PADDED CONTENT -->
+	</div>
 
 	<div class="padded">
 		<footer>
 			<a href="#" class="btn">Employment</a><a href="" class="btn">Contact us</a>
+			<h2>Our Address</h2>
+			<address>
+				1007 N. Boulder Ct.
+				<span>Post Falls ID 83854</span>
+			</address>
+			<form id="newsletter" action="http://savorweb.createsend.com/INSERTURLHERE" method="post">
+			<h2>Newsletter</h2>
+            <input type="email" class="email" name="cm-oajur-oajur"onblur="if (this.value=='') this.value=this.defaultValue" onclick="if (this.defaultValue==this.value) this.value=''" value="Your Email Address">
+            <button type="submit" value="GO" class="subscribe">GO</button>
+            </form> 
 		</footer>
 	</div>
 
@@ -110,12 +114,13 @@
 	      // var navigation = responsiveNav(".nav-collapse");
 
 	      var navigation = responsiveNav(".nav-collapse", {
-	        customToggle: ".nav-toggle"
+	        customToggle: "#nav-toggle"
 	      });
 
-			$(".nav-toggle").click(function(){
-				$(this).toggleClass("close");
-			});
+	  //     	$("#nav-toggle").click(function(){
+			// 	$(this).toggleClass("close");
+			// 	console.log('collision');
+			// });
 
 			// pure JS
 			var elem = document.getElementById('slider');

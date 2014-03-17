@@ -235,7 +235,7 @@
           removeClass(nav, "closed");
           addClass(nav, "opened");
           addClass(htmlEl, opts.navActiveClass);
-          addClass(navToggle, "active");
+          addClass(navToggle, "active close");
           nav.style.position = opts.openPos;
           setAttributes(nav, {"aria-hidden": "false"});
           navOpen = true;
@@ -248,7 +248,7 @@
           addClass(nav, "closed");
           removeClass(nav, "opened");
           removeClass(htmlEl, opts.navActiveClass);
-          removeClass(navToggle, "active");
+          removeClass(navToggle, "active close");
           setAttributes(nav, {"aria-hidden": "true"});
 
           if (opts.animate) {
