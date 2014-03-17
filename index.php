@@ -49,8 +49,8 @@
 
 		<div class="callnow">
 			<h1>We're here for you 24/7</h1>
-			<a class="btn" href="tel+2086676633">Idaho Hotline: (208) 667-6633</a>
-			<a class="btn" href="tel+5099279416">Spokane Hotline: (509) 927-9416</a>
+			<a class="btn" href="tel:2086676633">Idaho Hotline: (208) 667-6633</a>
+			<a class="btn" href="tel:5099279416">Spokane Hotline: (509) 927-9416</a>
 		</div>
 
 
@@ -89,7 +89,8 @@
 
 	<div class="padded">
 		<footer>
-			<a href="#" class="btn">Employment</a><a href="" class="btn">Contact us</a>
+			<a href="#" class="btn">Employment</a>
+			<a href="" class="btn">Contact us</a>
 			<h2>Our Address</h2>
 			<address>
 				1007 N. Boulder Ct.
@@ -99,7 +100,11 @@
 			<h2>Newsletter</h2>
             <input type="email" class="email" name="cm-oajur-oajur"onblur="if (this.value=='') this.value=this.defaultValue" onclick="if (this.defaultValue==this.value) this.value=''" value="Your Email Address">
             <button type="submit" value="GO" class="subscribe">GO</button>
-            </form> 
+            </form>
+
+            <div class="cert">
+            	<img src="assets/img/certs.jpg" alt="">
+            </div>
 		</footer>
 	</div>
 
