@@ -16,11 +16,11 @@
 // a-z viewports. Place where design should change, not always on device widths
 // Hat-tip to @hereinthehive for getting us thinking about naming suggestions
 
-$a								: 300px;	// first viewport 
-$b								: 420px;	// up one
-$c								: 600px;	// up two TABLET
-$d								: 800px;	// up three DESKTOP
-$e								: 900px;	// up four
+$a								: 480px;	// landscape iphone
+$b								: 850px;	// up desktop
+$c								: 980px;	// up 
+$d								: 1100px;	// up 
+$e								: 1200px;	// up four
 $f								: 1300px;	// up five
 $ie-fixed						: 980px;    // Viewport for IE fixed width
 

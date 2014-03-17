@@ -317,9 +317,34 @@ img {
   width: 100%;
 }
 
+.is-desktop {
+  display: none !important;
+}
+.lt-ie9 .is-desktop {
+  display: block !important;
+}
+@media screen and (min-width: 850px) {
+  .is-desktop {
+    display: block !important;
+  }
+}
+
+.is-mobile {
+  display: block !important;
+}
+.lt-ie9 .is-mobile {
+  display: none !important;
+}
+@media screen and (min-width: 850px) {
+  .is-mobile {
+    display: none !important;
+  }
+}
+
 .wrapper {
   max-width: 960px;
   margin: 0 auto;
+  position: relative;
 }
 
 header {
@@ -335,13 +360,13 @@ header:after {
   clear: both;
 }
 .lt-ie9 header {
-  box-shadow: 0 5px 0 #00a7b8;
+  box-shadow: 0 10px 0 #00a7b8;
   border-bottom: solid 10px white;
   height: 200px;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 850px) {
   header {
-    box-shadow: 0 5px 0 #00a7b8;
+    box-shadow: 0 10px 0 #00a7b8;
     border-bottom: solid 10px white;
     height: 200px;
   }
@@ -350,25 +375,20 @@ header:after {
 .logo {
   float: left;
   width: 60%;
+  max-width: 200px;
   padding-left: 10px;
   margin-bottom: -9%;
   position: relative;
   z-index: 5;
 }
 .lt-ie9 .logo {
-  max-width: 35%;
+  width: 33%;
+  max-width: 310px;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 850px) {
   .logo {
-    max-width: 35%;
-  }
-}
-.lt-ie9 .logo {
-  max-width: 30%;
-}
-@media screen and (min-width: 900px) {
-  .logo {
-    max-width: 30%;
+    width: 33%;
+    max-width: 310px;
   }
 }
 
@@ -378,25 +398,33 @@ header:after {
   text-align: right;
   margin-top: -5px;
 }
+.lt-ie9 #nav-toggle {
+  display: none;
+}
+@media screen and (min-width: 850px) {
+  #nav-toggle {
+    display: none;
+  }
+}
 
-nav.nav-collapse {
+.nav-collapse {
   *zoom: 1;
   background-color: #00a7b8;
   clear: both;
   text-align: center;
   font-size: 1.25em;
 }
-nav.nav-collapse:before, nav.nav-collapse:after {
+.nav-collapse:before, .nav-collapse:after {
   content: "";
   display: table;
 }
-nav.nav-collapse:after {
+.nav-collapse:after {
   clear: both;
 }
-nav.nav-collapse ul {
+.nav-collapse ul {
   padding-top: 30px;
 }
-nav.nav-collapse ul li a {
+.nav-collapse ul li a {
   display: inline-block;
   width: 100%;
   padding: 10px 5px;
@@ -404,15 +432,59 @@ nav.nav-collapse ul li a {
   border-left: transparent 5px solid;
   border-right: transparent 5px solid;
 }
-nav.nav-collapse ul li a:hover, nav.nav-collapse ul li a:active {
+.nav-collapse ul li a:hover, .nav-collapse ul li a:active {
   background-color: #00d5eb;
   border-left-color: #ffee50;
+}
+.lt-ie9 .nav-collapse {
+  background-color: transparent;
+  float: right;
+  clear: none;
+  margin-top: 28px;
+}
+.lt-ie9 .nav-collapse ul {
+  padding-top: 0;
+}
+.lt-ie9 .nav-collapse ul li {
+  float: left;
+  width: auto;
+}
+.lt-ie9 .nav-collapse ul li a {
+  width: auto;
+  color: #00a7b8;
+}
+.lt-ie9 .nav-collapse ul li a:hover, .lt-ie9 .nav-collapse ul li a:active {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-left-color: transparent;
+}
+@media screen and (min-width: 850px) {
+  .nav-collapse {
+    background-color: transparent;
+    float: right;
+    clear: none;
+    margin-top: 28px;
+  }
+  .nav-collapse ul {
+    padding-top: 0;
+  }
+  .nav-collapse ul li {
+    float: left;
+    width: auto;
+  }
+  .nav-collapse ul li a {
+    width: auto;
+    color: #00a7b8;
+  }
+  .nav-collapse ul li a:hover, .nav-collapse ul li a:active {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-left-color: transparent;
+  }
 }
 
 .lt-ie9 .swipe {
   max-height: 300px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 480px) {
   .swipe {
     max-height: 300px;
   }
@@ -421,7 +493,7 @@ nav.nav-collapse ul li a:hover, nav.nav-collapse ul li a:active {
   margin-top: -125px;
   border: 10px solid white;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 850px) {
   .swipe {
     margin-top: -125px;
     border: 10px solid white;
@@ -434,7 +506,7 @@ nav.nav-collapse ul li a:hover, nav.nav-collapse ul li a:active {
 .lt-ie9 .padded {
   padding: 0;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 850px) {
   .padded {
     padding: 0;
   }
@@ -459,9 +531,63 @@ nav.nav-collapse ul li a:hover, nav.nav-collapse ul li a:active {
 .lt-ie9 .callnow {
   display: none;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 850px) {
   .callnow {
     display: none;
+  }
+}
+
+header .callnow {
+  display: none;
+}
+.lt-ie9 header .callnow {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 5px;
+  text-align: right;
+}
+.lt-ie9 header .callnow h1, .lt-ie9 header .callnow a, .lt-ie9 header .callnow span {
+  font-size: 0.75em;
+  display: inline;
+  clear: none;
+}
+.lt-ie9 header .callnow h1 {
+  margin: 0;
+  text-transform: normal;
+}
+.lt-ie9 header .callnow span {
+  color: black;
+}
+.lt-ie9 header .callnow .btn {
+  background-color: transparent;
+  border-left-width: 0;
+  padding: 0;
+}
+@media screen and (min-width: 850px) {
+  header .callnow {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    text-align: right;
+  }
+  header .callnow h1, header .callnow a, header .callnow span {
+    font-size: 0.75em;
+    display: inline;
+    clear: none;
+  }
+  header .callnow h1 {
+    margin: 0;
+    text-transform: normal;
+  }
+  header .callnow span {
+    color: black;
+  }
+  header .callnow .btn {
+    background-color: transparent;
+    border-left-width: 0;
+    padding: 0;
   }
 }
 
@@ -478,7 +604,7 @@ section {
   width: 47.9166667%;
   margin: 0 1.0416667%;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 850px) {
   section {
     display: inline;
     float: left;
@@ -497,12 +623,20 @@ section {
   width: 47.9166667%;
   margin: 0 1.0416667%;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 480px) {
   .cta figure {
     display: inline;
     float: left;
     width: 47.9166667%;
     margin: 0 1.0416667%;
+  }
+}
+.lt-ie9 .cta figure:first-of-type {
+  margin-left: 0;
+}
+@media screen and (min-width: 850px) {
+  .cta figure:first-of-type {
+    margin-left: 0;
   }
 }
 .cta figure h2 {
@@ -531,7 +665,7 @@ section {
   margin: 0 1.0416667%;
   margin-top: 20px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 480px) {
   .tips {
     display: inline;
     float: left;
@@ -544,7 +678,7 @@ section {
   position: relative;
 }
 .tips span {
-  font-size: 1.25em;
+  font-size: 0.9375em;
   position: absolute;
   top: 30%;
   width: 100%;
@@ -554,7 +688,7 @@ section {
 .lt-ie9 .tips span {
   font-size: 0.9375em;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 850px) {
   .tips span {
     font-size: 0.9375em;
   }
@@ -564,6 +698,66 @@ footer {
   overflow-x: hidden;
   width: 100%;
   padding-bottom: 30px;
+}
+.lt-ie9 footer {
+  text-align: center;
+  margin-top: 320px;
+  border-top: #ccc solid 2px;
+  padding-top: 20px;
+}
+.lt-ie9 footer .btn {
+  display: inline;
+  background: transparent;
+  border-left-width: 0;
+  width: auto;
+  text-align: left;
+  padding: 0;
+  color: #00a7b8;
+  border-right: 2px #ccc solid;
+  padding-right: 10px;
+  margin-right: 5px;
+}
+.lt-ie9 footer address {
+  padding: 0;
+  display: inline;
+}
+.lt-ie9 footer address:before {
+  content: "Address ";
+  color: #999;
+}
+.lt-ie9 footer address span {
+  display: inline;
+}
+@media screen and (min-width: 850px) {
+  footer {
+    text-align: center;
+    margin-top: 320px;
+    border-top: #ccc solid 2px;
+    padding-top: 20px;
+  }
+  footer .btn {
+    display: inline;
+    background: transparent;
+    border-left-width: 0;
+    width: auto;
+    text-align: left;
+    padding: 0;
+    color: #00a7b8;
+    border-right: 2px #ccc solid;
+    padding-right: 10px;
+    margin-right: 5px;
+  }
+  footer address {
+    padding: 0;
+    display: inline;
+  }
+  footer address:before {
+    content: "Address ";
+    color: #999;
+  }
+  footer address span {
+    display: inline;
+  }
 }
 
 address {
@@ -592,12 +786,38 @@ address span {
   text-indent: 5px;
   margin-bottom: 5px;
 }
+.lt-ie9 #newsletter {
+  display: inline-block;
+  width: auto;
+  margin-left: 15px;
+}
+.lt-ie9 #newsletter h2 {
+  text-align: left;
+}
+@media screen and (min-width: 850px) {
+  #newsletter {
+    display: inline-block;
+    width: auto;
+    margin-left: 15px;
+  }
+  #newsletter h2 {
+    text-align: left;
+  }
+}
 
 input {
   box-shadow: 0;
   background-color: #ddd;
   border: 0;
   border-radius: 0;
+}
+.lt-ie9 input {
+  display: inline-block;
+}
+@media screen and (min-width: 850px) {
+  input {
+    display: inline-block;
+  }
 }
 
 input[type="email"] {
@@ -611,9 +831,27 @@ input[type="email"]:focus {
   box-shadow: inset 0 0 0 2px #ffee50;
   padding-left: 1%;
 }
+.lt-ie9 input[type="email"]:focus {
+  padding-left: 4%;
+}
+@media screen and (min-width: 850px) {
+  input[type="email"]:focus {
+    padding-left: 4%;
+  }
+}
 
 input, button {
   padding: 10px;
+}
+.lt-ie9 input, .lt-ie9 button {
+  float: none !important;
+  display: inline-block;
+}
+@media screen and (min-width: 850px) {
+  input, button {
+    float: none !important;
+    display: inline-block;
+  }
 }
 
 button[type="submit"] {
@@ -626,6 +864,14 @@ button[type="submit"] {
   text-align: center;
   padding-top: 13px;
 }
+.lt-ie9 button[type="submit"] {
+  width: 60px;
+}
+@media screen and (min-width: 850px) {
+  button[type="submit"] {
+    width: 60px;
+  }
+}
 
 .cert {
   margin: 20px auto 0;
@@ -634,7 +880,7 @@ button[type="submit"] {
 .lt-ie9 .cert {
   width: 50%;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 850px) {
   .cert {
     width: 50%;
   }

@@ -22,9 +22,16 @@
 
 			<button type="button" role="button" id="nav-toggle" class="lines-button x2"><span class="lines"></span></button>
 			
+			<div class="callnow">
+				<h1>We're here for you 24/7</h1>
+				<span>
+				Idaho Hotline: (208) 667-6633 Spokane Hotline: (509) 927-9416
+				</span>
+			</div>
+
 			<nav class="nav-collapse">
 				<ul>
-					<li><a href="">Home</a></li>
+					<li class="is-desktop"><a href="">Home</a></li>
 					<li><a href="">About us</a></li>
 					<li><a href="">Services</a></li>
 					<li><a href="">Claims</a></li>
@@ -91,7 +98,7 @@
 		<footer>
 			<a href="#" class="btn">Employment</a>
 			<a href="" class="btn">Contact us</a>
-			<h2>Our Address</h2>
+			<h2 class="is-mobile">Our Address</h2>
 			<address>
 				1007 N. Boulder Ct.
 				<span>Post Falls ID 83854</span>

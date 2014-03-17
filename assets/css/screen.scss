@@ -53,6 +53,20 @@ img {
 	width: 100%;
 }
 
+.is-desktop {
+	display: none !important;
+	@include break($b) {
+		display: block !important;
+	}
+}
+
+.is-mobile {
+	display: block !important;
+	@include break($b) {
+		display: none !important;
+	}
+}
+
 //////////
 // GRID //
 //////////
@@ -73,6 +87,7 @@ $total-width: 100%;
 .wrapper {
 	max-width: 960px;
 	margin: 0 auto;
+	position: relative;
 }
 
 header {
@@ -80,8 +95,8 @@ header {
 	border-bottom: solid 5px $secondary;
 	@include clearfix;
 	//box-shadow: -25rem 0 0 $primary, 25rem 0 0 $primary; 
-	@include break($d) {
-		box-shadow: 0 5px 0 $secondary;
+	@include break($b) {
+		box-shadow: 0 10px 0 $secondary;
 		border-bottom: solid 10px $light;
 		height: 200px;
 	}
@@ -90,15 +105,14 @@ header {
 .logo {
 	float: left;
 	width: 60%;
+	max-width: 200px;
 	padding-left: 10px;
 	margin-bottom: -9%;
 	position: relative;
 	z-index: 5;
-	@include break($d) {
-		max-width: 35%;
-	}
-	@include break($e) {
-		max-width: 30%;
+	@include break($b) {
+		width: 33%;
+		max-width: 310px;
 	}
 }
 
@@ -107,9 +121,12 @@ header {
 	display: block;
 	text-align: right;
 	margin-top: -5px;
+	@include break($b) {
+		display: none;
+	}
 }
 
-nav.nav-collapse {
+.nav-collapse {
 	@include clearfix;
 	background-color: $secondary;
 	clear: both;
@@ -130,13 +147,34 @@ nav.nav-collapse {
 			}
 		}
 	}
+	@include break($b) {
+		background-color: transparent;
+		float: right;
+		clear: none;
+		margin-top: 28px;
+		ul {
+			padding-top: 0;
+			li {
+				float: left;
+				width: auto;
+				a {
+					width: auto;
+					color: $secondary;
+					&:hover, &:active {
+						background-color: transparentize($light, 0.5);
+						border-left-color: transparent;
+					}
+				}
+			}
+		}
+	}
 }
 
 .swipe {
-	@include break($c) {
+	@include break($a) {
 		max-height: 300px;
 	}
-	@include break($d) {
+	@include break($b) {
 		margin-top: -125px;
 		border: 10px solid $light;
 	}
@@ -145,7 +183,7 @@ nav.nav-collapse {
 .padded {
 	//@include row(12);
 	padding: 4%;
-	@include break($d) {
+	@include break($b) {
 		padding: 0;
 	}
 }
@@ -162,15 +200,36 @@ nav.nav-collapse {
 		font-size: em-font(20px);
 		text-transform: uppercase;
 	}
-	@include break($d) {
+	@include break($b) {
 		display: none;
+	}
+}
+
+header .callnow {
+	display: none;
+	@include break($b) {
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 5px;
+		text-align: right;
+		h1, a, span {font-size: em-font(12px); display: inline; clear: none;}
+		h1 {margin: 0; text-transform: normal;}
+		span {
+			color: $dark;
+		}
+		.btn {
+			background-color: transparent;
+			border-left-width: 0;
+			padding: 0;
+		}
 	}
 }
 
 section {
 	@include column(12);
 	padding: 10px 0 0;
-	@include break($d) {
+	@include break($b) {
 		@include column(6);
 	}
 }
@@ -178,8 +237,13 @@ section {
 .cta {
 	figure {
 		margin-bottom: 10px;
-		@include break($c) {
+		@include break($a) {
 			@include column(6);
+		}
+		@include break($b) {
+			&:first-of-type {
+				margin-left: 0;
+			}
 		}
 		background-color: $secondary;
 		h2 {
@@ -196,7 +260,7 @@ section {
 .tips {
 	@include column(6);
 	margin-top: 20px;
-	@include break($c) {
+	@include break($a) {
 		@include column(3);
 		margin-top: 20px;
 	}
@@ -207,8 +271,8 @@ section {
 		position: relative;
 	}
 	span {
-		font-size: em-font(20px);
-		@include break($d) {
+		font-size: em-font(15px);
+		@include break($b) {
 		font-size: em-font(15px);			
 		}
 		position: absolute;
@@ -229,6 +293,39 @@ footer {
 	overflow-x: hidden;
 	width: 100%;
 	padding-bottom: 30px;
+	@include break($b) {
+		text-align: center;
+		margin-top: 320px;
+		border-top: #ccc solid 2px;
+		padding-top: 20px;
+		.btn {
+			display: inline;
+			background: transparent;
+			border-left-width: 0;
+			width: auto;
+			text-align: left;
+			padding: 0;
+			color: $secondary;
+			border-right: 2px #ccc solid;
+			padding-right: 10px;
+			margin-right: 5px;
+			// &:after {
+			// 	padding-left: 15px;
+			// 	content: "|";
+			// }
+		}
+		address {
+			padding: 0;
+			display: inline;
+			&:before {
+				content: "Address ";
+				color: #999;
+			}
+			span {
+				display: inline;
+			}
+		}
+	}
 }
 
 address {
@@ -247,6 +344,12 @@ address {
 		text-indent:5px;
 		margin-bottom: 5px;
 	}
+	@include break($b) {
+		display: inline-block;
+		width: auto;
+		margin-left: 15px;
+		h2 {text-align: left;}
+	}
 }
 
 input {
@@ -254,6 +357,9 @@ input {
 	background-color: #ddd;
 	border: 0;
 	border-radius: 0;
+	@include break($b) {
+		display: inline-block;
+	}
 }
 
 input[type="email"] {
@@ -262,6 +368,12 @@ input[type="email"] {
 		outline: 0;
 		box-shadow: inset 0 0 0 2px $primary;
 		padding-left: 1%;
+		@include break($b) {
+			padding-left: 4%;
+		}
+	}
+	@include break($b) {
+
 	}
 }
 
@@ -269,6 +381,10 @@ $form-pad: 10px;
 
 input, button {
 	padding: $form-pad;
+	@include break($b) {
+		float: none !important;
+		display: inline-block;
+	}	
 }
 
 button[type="submit"] {
@@ -277,12 +393,15 @@ button[type="submit"] {
 	color: $light;
 	text-align: center;
 	padding-top: $form-pad + 3px;
+	@include break($b) {
+		width: 60px;
+	}
 }
 
 .cert {
 	margin: 20px auto 0;
 	width: 95%;
-	@include break($d) {
+	@include break($b) {
 		width: 50%;
 	}
 	img {
