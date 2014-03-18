@@ -89,7 +89,7 @@
 			</a>
 		</section>
 		<section class="fb">
-			<img src="http://www.placehold.it/500x300" alt="">
+			
 		</section>
 
 	</div>
