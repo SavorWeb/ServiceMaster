@@ -189,6 +189,7 @@ $total-width: 100%;
 }
 
 .callnow {
+	@extend .font-sans;
 	@include column(12);
 	h1, a {
 		clear:both;
@@ -206,6 +207,7 @@ $total-width: 100%;
 }
 
 header .callnow {
+	@extend .font-sans;
 	display: none;
 	@include break($b) {
 		display: block;
@@ -373,6 +375,7 @@ footer {
 	overflow-x: hidden;
 	width: 100%;
 	padding-bottom: 30px;
+	@extend .font-sans;
 	@include break($b) {
 		text-align: center;
 		margin-top: 320px;
@@ -486,6 +489,121 @@ button[type="submit"] {
 	}
 	img {
 		width: 100%;
+	}
+}
+
+
+// END HOMEPAGE SPECIFIC STYLES
+
+.pageimg {
+	@extend .swipe;
+	visibility: visible;
+	max-height: 200px;
+	img {
+		margin-top: -25%;
+	}
+}
+
+.content {
+	@include clearfix;
+	margin-bottom: 25px;
+
+	h1, h2, h3 {
+		color: $secondary;
+		font-weight: bold;
+		letter-spacing: 1px;
+		margin-bottom: 10px;
+	}
+
+	h1 {
+		font-size: em-font(25px);
+	}
+	h2 {
+		font-size: em-font(20px);
+	}
+	h3 {
+		font-size: em-font(15px);
+		letter-spacing: 0;
+	}
+	p {
+		margin-bottom: 10px;
+	}
+	article {
+		margin-bottom: 25px;
+		clear: both;
+		width: 100%;
+	}
+	img {
+		margin-bottom: 20px;
+	}
+	@include break($a) {
+		img {
+			max-width: 40%;
+			margin-left: 2%;
+			float: right;
+		}
+	}
+	@include break($b) {
+		@include column(9);
+		float: right;
+		img {
+			max-width: 25%;
+			margin-left: 5%;
+		}
+	}
+}
+
+aside {
+	h2 {
+		@extend h1;
+		font-size: em-font(18px);
+		font-weight: normal;
+		text-transform: uppercase;
+	}
+	@include clearfix;
+	clear: both;
+	margin-bottom: 30px;
+	background-color: $secondary;
+	@extend .font-sans;
+	@include break($b) {
+		@include column(3);
+		margin-bottom: 30px;
+		clear: none;
+		height: 100%;
+	}
+	h2 {
+		font-size: em-font(15px);
+		background-color: $primary;
+		color: $dark;
+		width: 100%;
+		padding: 10px 26px;
+		@include break($b) {
+			padding-left: 20px;
+		}
+	}
+	ul {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		li {
+			width: 100%;
+			a {
+				display: inline-block;
+				width: 100%;
+				color: white;
+				border-left: transparent 5px solid;
+				border-right: transparent 5px solid;
+				
+				padding: 10px 20px;
+				@include break($b) {
+					padding: 5px 15px;
+				}
+				&:hover, &:active {
+					background-color: lighten($secondary, 10%);
+					border-left-color: $primary;
+					color: $light;
+				}
+			}
+		}
 	}
 }
 
