@@ -23,9 +23,9 @@
 
 		<!-- TODO: Select version of jquery and link to CDN -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script src="assets/js/facebook.js"></script>
+		<script src="assets/js/facebook.min.js"></script>
 		<script src="assets/js/jquery.tmpl.min.js"></script>
-		<script src="assets/js/responsive-nav.js"></script>
+		<script src="assets/js/responsive-nav.min.js"></script>
 		<script src="assets/js/swipe.min.js"></script>
 		<script>
 	      // var navigation = responsiveNav(".nav-collapse");
@@ -34,7 +34,7 @@
 	        customToggle: "#nav-toggle"
 	      });
 
-	  //     	$("#nav-toggle").click(function(){
+	  		//$("#nav-toggle").click(function(){
 			// 	$(this).toggleClass("close");
 			// 	console.log('collision');
 			// });
@@ -55,50 +55,88 @@
 			// window.mySwipe = $('#mySwipe').Swipe().data('Swipe');
 
 
-</script>
-<!-- jQuery templates. Not rendered by the browser. Notice the type attributes -->
+		</script>
 
-<script id="headingTpl" type="text/x-jquery-tmpl">
-<h1>${name}<span>on Facebook</span></h1>
-</script>
+			<!-- FORM SCRIPT -->
+		<script type="text/javascript">
+		  <!--//--><![CDATA[//><!--
+		  $(document).ready(function() {
+		    $('form#contact-us').submit(function() {
+		      $('form#contact-us .error').remove();
+		      var hasError = false;
+		      $('.requiredField').each(function() {
+		        if($.trim($(this).val()) == '') {
+		          var labelText = $(this).prev('label').text();
+		          $(this).parent().append('<span class="error">Your forgot to enter your '+labelText+'.</span>');
+		          $(this).addClass('inputError');
+		          hasError = true;
+		        } else if($(this).hasClass('email')) {
+		          var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+		          if(!emailReg.test($.trim($(this).val()))) {
+		            var labelText = $(this).prev('label').text();
+		            $(this).parent().append('<span class="error">Sorry! You\'ve entered an invalid '+labelText+'.</span>');
+		            $(this).addClass('inputError');
+		            hasError = true;
+		          }
+		        }
+		      });
+		      if(!hasError) {
+		        var formInput = $(this).serialize();
+		        $.post($(this).attr('action'),formInput, function(data){
+		          $('form#contact-us').slideUp("fast", function() {          
+		            $(this).before('<p>Thanks for the message! We\'ll get back to you as soon as we can.</p>');
+		          });
+		        });
+		      }
+		      
+		      return false; 
+		    });
+		  });
+		  //-->!]]>
+		</script>
 
-<script id="feedTpl" type="text/x-jquery-tmpl">
-<li>
-	<img src="${from.picture}" class="avatar" />
-	
-	<div class="status">
-		<h2><a href="http://www.facebook.com/profile.php?id=${from.id}" target="_blank">${from.name}</a></h2>
-		<p class="message">{{html message}}</p>
-		{{if type == "link" }}
-			<div class="attachment">
-				{{if picture}}
-					<img class="picture" src="${picture}" />
+		<!-- jQuery templates. Not rendered by the browser. Notice the type attributes -->
+
+		<script id="headingTpl" type="text/x-jquery-tmpl">
+		<h1>${name}<span>on Facebook</span></h1>
+		</script>
+
+		<script id="feedTpl" type="text/x-jquery-tmpl">
+		<li>
+			<img src="${from.picture}" class="avatar" />
+			
+			<div class="status">
+				<h2><a href="http://www.facebook.com/profile.php?id=${from.id}" target="_blank">${from.name}</a></h2>
+				<p class="message">{{html message}}</p>
+				{{if type == "link" }}
+					<div class="attachment">
+						{{if picture}}
+							<img class="picture" src="${picture}" />
+						{{/if}}
+						<div class="attachment-data">
+							<p class="name"><a href="${link}" target="_blank">${name}</a></p>
+							<p class="caption">${caption}</p>
+							<p class="description">${description}</p>
+						</div>
+					</div>
 				{{/if}}
-				<div class="attachment-data">
-					<p class="name"><a href="${link}" target="_blank">${name}</a></p>
-					<p class="caption">${caption}</p>
-					<p class="description">${description}</p>
-				</div>
 			</div>
-		{{/if}}
-	</div>
-	
-	<p class="meta">${created_time} · 
-	{{if comments}}
-		${comments.count} Comment{{if comments.count>1}}s{{/if}}
-	{{else}}
-		0 Comments
-	{{/if}} · 
-	{{if likes}}
-		${likes.count} Like{{if likes.count>1}}s{{/if}}
-	{{else}}
-		0 Likes
-	{{/if}}
-	</p>
-	
-</li>
-</script>
-
+			
+			<p class="meta">${created_time} · 
+			{{if comments}}
+				${comments.count} Comment{{if comments.count>1}}s{{/if}}
+			{{else}}
+				0 Comments
+			{{/if}} · 
+			{{if likes}}
+				${likes.count} Like{{if likes.count>1}}s{{/if}}
+			{{else}}
+				0 Likes
+			{{/if}}
+			</p>
+			
+		</li>
+		</script>
 		<script src="assets/js/script.min.js"></script>
 	</body>
 

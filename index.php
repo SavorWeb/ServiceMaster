@@ -51,7 +51,7 @@
 		
 		<section class="fb">
 			<header>
-				<h1>ServiceMaster of North Idaho</h1>
+				<h1><a target="_blank" href="https://www.facebook.com/pages/Servicemaster-of-North-Idaho/524500907614152">ServiceMaster of North Idaho</a></h1>
 				<div class="fb-like" data-href="https://www.facebook.com/pages/Servicemaster-of-North-Idaho/524500907614152" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
 			</header>
 			<div id="wall" class="facebookWall"></div>

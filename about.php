@@ -9,7 +9,7 @@
 	<div class="padded"> <!-- START CONTENT -->
 		
 		<section class="content">
-			<article>
+			<article class="editable">
 				<h1>Our Mission</h1>
 				<img src="http://www.placehold.it/500x500" alt="">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, in, quasi animi nulla quo necessitatibus corrupti harum dolores non labore! Eos, libero cumque quis doloribus quod beatae quas repellat sed.</p>
@@ -32,7 +32,7 @@
 			</ul>
 		</aside>
 		<aside>
-			<h2>Second Sidebar?</h2>
+			<h2>Second Sidebar?d</h2>
 			<ul>
 				<li><a href="">Link</a></li>
 				<li><a href="">Links</a></li>
