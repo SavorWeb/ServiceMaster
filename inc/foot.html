@@ -27,7 +27,11 @@
 		<script src="assets/js/jquery.tmpl.min.js"></script>
 		<script src="assets/js/responsive-nav.min.js"></script>
 		<script src="assets/js/swipe.min.js"></script>
+		<script src="assets/js/collapse.min.js"></script>
 		<script>
+
+		$('#accordion').collapse();
+
 	      // var navigation = responsiveNav(".nav-collapse");
 
 	      var navigation = responsiveNav(".nav-collapse", {
@@ -67,7 +71,7 @@
 		      $('.requiredField').each(function() {
 		        if($.trim($(this).val()) == '') {
 		          var labelText = $(this).prev('label').text();
-		          $(this).parent().append('<span class="error">Your forgot to enter your '+labelText+'.</span>');
+		          $(this).parent().append('<span style="display: block;" class="error">You forgot to enter your '+labelText+'.</span>');
 		          $(this).addClass('inputError');
 		          hasError = true;
 		        } else if($(this).hasClass('email')) {

@@ -4,9 +4,9 @@
 
 	<div id='slider' class='swipe'>
 	  <div class='swipe-wrap'>
-	    <div><img src="http://www.placehold.it/800x350" alt=""></div>
-	    <div><img src="http://www.placehold.it/800x350" alt=""></div>
-	    <div><img src="http://www.placehold.it/800x350" alt=""></div>
+	    <div><img src="assets/img/techcustomer.jpg" alt=""></div>
+	    <div><img src="assets/img/techenter.jpg" alt=""></div>
+	    <div><img src="assets/img/truckguy.jpg" alt=""></div>
 	  </div>
 	</div>
 
@@ -19,14 +19,18 @@
 		</div>
 
 		<section class="cta">
-			<figure>
-				<img src="http://www.placehold.it/400x175" alt="">
+			<a class="featured" href="#">
+				<figure>
+					<img src="assets/img/hallway.jpg" alt="">
+				</figure>
 				<h2>Current Projects</h2>
-			</figure>
-			<figure>
-				<img src="http://www.placehold.it/400x175" alt="">
+			</a>
+			<a class="featured" href="#">
+				<figure>
+					<img src="assets/img/airmover.jpg" alt="">
+				</figure>
 				<h2>Testimonials</h2>
-			</figure>
+			</a>
 			
 			<a href="#" class="tips">
 				<object type="image/svg+xml" data="assets/img/triangle.svg"></object>

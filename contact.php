@@ -3,7 +3,7 @@
 	<div class="wrapper">
 	
 	<div class="pageimg">
-		<img src="assets/img/truckguy.jpg" alt="A Service Master!">
+		<img src="assets/img/techcustomer.jpg" alt="A Service Master!">
 	</div>
 
 	<div class="padded"> <!-- START CONTENT -->

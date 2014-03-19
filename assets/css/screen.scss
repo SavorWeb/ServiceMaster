@@ -181,11 +181,26 @@ $total-width: 100%;
 	}
 }
 
+.swipe-wrap {
+	max-height: 200px;
+	@include break($a) {
+		img {margin-top: -10%;}
+	}
+	@include break($b) {
+		max-height: 300px;
+		img {
+			margin-top: -20%;
+		}
+	}
+}
+
 .padded {
 	//@include row(12);
 	padding: 4%;
 	@include break($b) {
+		@include clearfix;
 		padding: 0;
+		margin-bottom: 20px;
 	}
 }
 
@@ -238,8 +253,13 @@ section {
 }
 
 .cta {
-	figure {
+	.featured {
 		margin-bottom: 10px;
+		display: block;
+		figure {
+			overflow: hidden;			
+			height: 130px;
+		}
 		@include break($a) {
 			@include column(6);
 		}
@@ -248,14 +268,16 @@ section {
 				margin-left: 0;
 			}
 		}
-		background-color: $secondary;
 		h2 {
 			font-size: em-font(20px);
 			padding: 8px 10px;
 			color: $light;
+			background-color: $secondary;
+			border-top: solid 5px $primary;
+			width: 100%;
 		}
-		img {
-			border-bottom: solid 5px $primary;
+		&:hover > h2 {
+			background-color: lighten($secondary, 10%);
 		}
 	}
 }
@@ -291,7 +313,7 @@ section {
 /* The wall post items */
 
 .facebookWall li{
-	background: url('../img/divider.png') no-repeat center bottom;
+	//background: url('../img/divider.png') no-repeat center bottom;
 	list-style: none;
 	margin-bottom: 20px;
 	overflow: hidden;
@@ -379,7 +401,6 @@ footer {
 	@extend .font-sans;
 	@include break($b) {
 		text-align: center;
-		margin-top: 320px;
 		border-top: #ccc solid 2px;
 		padding-top: 20px;
 		.btn {
@@ -624,7 +645,7 @@ aside {
 button[type="submit"]:active {
   box-shadow:inset 0 1px 3px rgba(0,0,0,0.5);
 }
-button:active, button:focus {
+button[type="submit"]:active, button[type="submit"]:focus {
 	box-shadow:inset 0 1px 3px rgba(0,0,0,0.5);
 	outline: 0;
 }
@@ -676,6 +697,31 @@ textarea:focus {
 			background-color: lighten($secondary, 10%);
 		}
 	}
+}
+
+.collapse {
+  display: none;
+}
+.collapse.in {
+  display: block;
+}
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+  transition: height 0.35s ease;
+}
+
+.panel-title a {
+	background-color: $primary;
+	display: block;
+	width: 100%;
+}
+
+.panel-title a, .panel-body {
+	margin-bottom: 10px;
+	padding: 2%;
 }
 
 
