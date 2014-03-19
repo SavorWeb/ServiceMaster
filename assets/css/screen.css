@@ -732,6 +732,7 @@ section {
   font-size: 0.9375em;
   position: absolute;
   top: 30%;
+  left: 0;
   width: 100%;
   text-align: center;
   text-transform: uppercase;
@@ -1021,6 +1022,10 @@ button[type="submit"]:hover {
   }
 }
 .cert img {
+  width: 100%;
+}
+
+.pageimg, .swipe, .pageimg {
   width: 100%;
 }
 

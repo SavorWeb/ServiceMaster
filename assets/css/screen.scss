@@ -302,6 +302,7 @@ section {
 		}
 		position: absolute;
 		top: 30%;
+		left: 0;
 		width: 100%;
 		text-align: center;
 		text-transform: uppercase;
@@ -522,6 +523,10 @@ button[type="submit"] {
 
 
 // END HOMEPAGE SPECIFIC STYLES
+
+.pageimg, .swipe {
+	width: 100%;
+}
 
 .pageimg {
 	@extend .swipe;
