@@ -372,7 +372,7 @@ img {
   }
 }
 
-.logo {
+.logo, .homelink {
   float: left;
   width: 60%;
   max-width: 200px;
@@ -380,15 +380,33 @@ img {
   margin-bottom: -9%;
   position: relative;
   z-index: 5;
+  display: block;
 }
-.lt-ie9 .logo {
+.logo object, .homelink object {
+  width: 100%;
+}
+.lt-ie9 .logo, .lt-ie9 .homelink {
   width: 33%;
   max-width: 310px;
 }
 @media screen and (min-width: 850px) {
-  .logo {
+  .logo, .homelink {
     width: 33%;
     max-width: 310px;
+  }
+}
+
+.homelink {
+  z-index: 6;
+  height: 70px;
+  position: absolute;
+}
+.lt-ie9 .homelink {
+  height: 100px;
+}
+@media screen and (min-width: 480px) {
+  .homelink {
+    height: 100px;
   }
 }
 
@@ -479,6 +497,13 @@ img {
     background-color: rgba(255, 255, 255, 0.5);
     border-left-color: transparent;
   }
+}
+
+.on-page {
+  background-color: white;
+}
+.on-page:hover {
+  background-color: white !important;
 }
 
 .lt-ie9 .swipe, .lt-ie9 .pageimg {
@@ -758,6 +783,7 @@ section {
 /* The user/page avatar */
 .facebookWall li img.avatar {
   float: left;
+  margin-right: 18px;
 }
 
 /* The user/page name */
@@ -768,9 +794,15 @@ section {
 }
 
 /* The .status div container */
-.facebookWall .status {
+.lt-ie9 .facebookWall .status {
   width: 420px;
   padding-left: 65px;
+}
+@media screen and (min-width: 850px) {
+  .facebookWall .status {
+    width: 420px;
+    padding-left: 65px;
+  }
 }
 
 /* Link share attachment */
@@ -792,6 +824,9 @@ section {
   margin-right: 10px;
 }
 
+.fb {
+  margin-top: 20px;
+}
 .fb header {
   padding-bottom: 10px;
   margin-bottom: 14px;
@@ -825,6 +860,10 @@ section {
   color: #BBBBBB;
   font-size: 11px;
   padding: 15px 0 0 65px;
+}
+
+div.fb-like.fb_iframe_widget.fb_iframe_widget_fluid {
+  width: auto !important;
 }
 
 footer {
@@ -1249,7 +1288,7 @@ textarea:focus {
   display: none;
 }
 #contact-us input, #contact-us textarea {
-  width: 85%;
+  width: 100%;
   margin: 5px 0;
   padding: 10px;
   background-color: #ddd;
@@ -1297,11 +1336,25 @@ textarea:focus {
   background-color: #ffee50;
   display: block;
   width: 100%;
+  font-weight: bold;
+}
+.lt-ie9 .panel-title a {
+  font-weight: normal;
+}
+@media screen and (min-width: 850px) {
+  .panel-title a {
+    font-weight: normal;
+  }
 }
 
-.panel-title a, .panel-body {
+.panel-body {
   margin-bottom: 10px;
   padding: 2%;
+}
+
+.panel-title a {
+  margin-bottom: 10px;
+  padding: 15px;
 }
 
 /* ::Import styles */

@@ -1,11 +1,13 @@
 <div class="padded">
 		<footer>
 			<a href="#" class="btn">Employment</a>
-			<a href="" class="btn">Contact us</a>
+			<a href="contact.php" class="btn">Contact us</a>
 			<h2 class="is-mobile">Our Address</h2>
 			<address>
-				1007 N. Boulder Ct.
-				<span>Post Falls ID 83854</span>
+				<a href="https://www.google.com/maps/place/1007+N+Boulder+Ct/@47.718794,-116.99979,17z/data=!3m1!4b1!4m2!3m1!1s0x5361dd330ac0a723:0x1c1c674afef229a5">
+					1007 N. Boulder Ct.
+					<span>Post Falls ID 83854</span>
+				</a>
 			</address>
 			<form id="newsletter" action="http://savorweb.createsend.com/INSERTURLHERE" method="post">
 			<h2>Newsletter</h2>
@@ -58,7 +60,40 @@
 			// with jQuery
 			// window.mySwipe = $('#mySwipe').Swipe().data('Swipe');
 
+		</script>
 
+		<script>
+			$(document).ready(function(){
+
+// $(function() {
+//   $('.nav-collapse a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('on-page');
+// });
+
+
+// (function() {
+//     var anchor = $('.nav-collapse a').attr('page'),
+//         current = $('.wrapper').attr('page');
+//         for (var i = 0; i < anchor.length; i++) {
+//         if(anchor[i].attr('page') == current) {
+//             anchor[i].className = "on-page";
+//         }
+//     }
+// })();
+
+			    // var theLink = $('.nav-collapse a');
+			    // var thePage = $('.wrapper').attr('page');
+			    // var linkPage = theLink.attr('page');
+			    // console.log("running");
+
+			    // theLink.each(function(){
+			    //     if ($('this').attr('page') == thePage) {
+			    //         $('this').addClass('on-page');
+			    //         console.log("If Ran");
+			    //     }
+			        
+			    // });
+			    // console.log("this isnt working... something to do with the call on theLink. Each isnt gonna work. Attempting to call the page and compare it to the value of page on the link to addClass on.")
+			});
 		</script>
 
 			<!-- FORM SCRIPT -->

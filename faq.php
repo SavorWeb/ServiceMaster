@@ -11,6 +11,7 @@
 		<section class="content">
 			<article class="editable">
 				<h1>FAQ</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, adipisci, voluptatibus, illo, illum ipsam maiores iste impedit repellendus vero aliquam animi commodi nam similique voluptates soluta modi hic labore laborum!</p>
 				<div class="panel-group" id="accordion">
 				  <div class="panel panel-default">
 				    <div class="panel-heading">
