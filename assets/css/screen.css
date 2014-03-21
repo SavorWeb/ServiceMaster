@@ -1076,78 +1076,81 @@ button[type="submit"]:hover {
   margin-top: -25%;
 }
 
-.content {
+.aside-layout {
   *zoom: 1;
   margin-bottom: 25px;
 }
-.content:before, .content:after {
+.aside-layout:before, .aside-layout:after {
   content: "";
   display: table;
 }
-.content:after {
+.aside-layout:after {
   clear: both;
 }
-.content h1, .content aside h2, aside .content h2, .content h2, .content h3 {
-  color: #00a7b8;
-  font-weight: bold;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-}
-.content h1, .content aside h2, aside .content h2 {
-  font-size: 1.5625em;
-}
-.content h2 {
-  font-size: 1.25em;
-}
-.content h3 {
-  font-size: 0.9375em;
-  letter-spacing: 0;
-}
-.content p {
-  margin-bottom: 10px;
-}
-.content article {
-  margin-bottom: 25px;
-  clear: both;
-  width: 100%;
-}
-.content img {
-  margin-bottom: 20px;
-}
-.lt-ie9 .content img {
-  max-width: 40%;
-  margin-left: 2%;
-  float: right;
-}
-@media screen and (min-width: 480px) {
-  .content img {
-    max-width: 40%;
-    margin-left: 2%;
-    float: right;
-  }
-}
-.lt-ie9 .content {
+.lt-ie9 .aside-layout {
   display: inline;
   float: left;
   width: 72.9166667%;
   margin: 0 1.0416667%;
   float: right;
 }
-.lt-ie9 .content img {
-  max-width: 25%;
-  margin-left: 5%;
-}
 @media screen and (min-width: 850px) {
-  .content {
+  .aside-layout {
     display: inline;
     float: left;
     width: 72.9166667%;
     margin: 0 1.0416667%;
     float: right;
   }
-  .content img {
+}
+
+article {
+  margin-bottom: 25px;
+  clear: both;
+  width: 100%;
+}
+article h1, article aside h2, aside article h2, article h2, article h3 {
+  color: #00a7b8;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+article h1, article aside h2, aside article h2 {
+  font-size: 1.5625em;
+}
+article h2 {
+  font-size: 1.25em;
+}
+article h3 {
+  font-size: 0.9375em;
+  letter-spacing: 0;
+}
+article p {
+  margin-bottom: 10px;
+}
+article img {
+  margin-bottom: 20px;
+}
+.lt-ie9 article img {
+  max-width: 25%;
+  margin-left: 5%;
+}
+@media screen and (min-width: 850px) {
+  article img {
     max-width: 25%;
     margin-left: 5%;
+  }
+}
+.lt-ie9 article img {
+  max-width: 40%;
+  margin-left: 2%;
+  float: right;
+}
+@media screen and (min-width: 480px) {
+  article img {
+    max-width: 40%;
+    margin-left: 2%;
+    float: right;
   }
 }
 

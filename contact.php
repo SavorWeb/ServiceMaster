@@ -8,7 +8,7 @@
 
 	<div class="padded"> <!-- START CONTENT -->
 		
-		<section class="content">
+		<section class="aside-layout">
 			<article id="contact-info" class="editable">
 				<h1>Contact us</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, in, quasi animi nulla quo necessitatibus corrupti harum dolores non labore! Eos, libero cumque quis doloribus quod beatae quas repellat sed.</p>

@@ -566,10 +566,19 @@ button[type="submit"] {
 	}
 }
 
-.content {
+.aside-layout {
 	@include clearfix;
 	margin-bottom: 25px;
+	@include break($b) {
+		@include column(9);
+		float: right;
+	}
+}
 
+article {
+	margin-bottom: 25px;
+	clear: both;
+	width: 100%;
 	h1, h2, h3 {
 		color: $secondary;
 		font-weight: bold;
@@ -590,27 +599,18 @@ button[type="submit"] {
 	p {
 		margin-bottom: 10px;
 	}
-	article {
-		margin-bottom: 25px;
-		clear: both;
-		width: 100%;
-	}
 	img {
 		margin-bottom: 20px;
+		@include break($b) {
+			max-width: 25%;
+			margin-left: 5%;
+		}
 	}
 	@include break($a) {
 		img {
 			max-width: 40%;
 			margin-left: 2%;
 			float: right;
-		}
-	}
-	@include break($b) {
-		@include column(9);
-		float: right;
-		img {
-			max-width: 25%;
-			margin-left: 5%;
 		}
 	}
 }

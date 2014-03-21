@@ -8,7 +8,7 @@
 
 	<div class="padded"> <!-- START CONTENT -->
 		
-		<section class="content">
+		<section class="aside-layout">
 			<article class="editable">
 				<h1>Claims</h1>
 				<img src="http://www.placehold.it/500x500" alt="">

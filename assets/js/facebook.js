@@ -36,7 +36,7 @@ $(document).ready(function(){
 		// Default options of the plugin:
 		
 		options = $.extend({
-			limit: 4	// You can also pass a custom limit as a parameter.
+			limit: 2	// You can also pass a custom limit as a parameter.
 		},options);
 
 		// Putting together the Facebook Graph API URLs:
@@ -59,7 +59,7 @@ $(document).ready(function(){
 			$.each(posts[0].data,function(){
 				
 				// We only show links and statuses from the posts feed:
-				if((this.type != 'link' && this.type!='status') || !this.message){
+				if((this.type != 'link' && this.type!='status' && this.type!='photo') || !this.message){
 					return true;
 				}
 

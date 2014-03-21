@@ -1,6 +1,6 @@
 <?php include("inc/head.html"); ?>
 
-	<div page="Home Page" class="wrapper">
+	<div id="Home" class="wrapper">
 
 	<div id='slider' class='swipe'>
 	  <div class='swipe-wrap'>
