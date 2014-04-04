@@ -27,6 +27,10 @@ body {
 	color: $base-color;
 }
 
+.clearfix {
+	@include clearfix;
+}
+
 a {
 	color: $action;
 	text-decoration: none;
@@ -216,7 +220,11 @@ $total-width: 100%;
 }
 
 .padded {
-	//@include row(12);
+	@include column(12);
+	&.home {
+		width: 100%;
+		margin: 0;
+	}
 	padding: 4%;
 	@include break($b) {
 		@include clearfix;
@@ -266,11 +274,86 @@ header .callnow {
 }
 
 section {
-	@include column(12);
+	display: block;
 	padding: 10px 0 0;
+}
+
+.full, .half, .third, .fourth {
+	margin-bottom: 20px;
+}
+
+.full, .c12 {
+	@include column(12);
+}
+
+.c11 {
+	@include break($b) {
+		@include column(11);
+	}
+}
+
+.c10 {
+	@include break($b) {
+		@include column(10);
+	}
+}
+
+.c9 {
+	@include break($b) {
+		@include column(9);
+	}
+}
+
+.c8 {
+	@include break($b) {
+		@include column(8);
+	}
+}
+
+.c7 {
+	@include break($b) {
+		@include column(7);
+	}
+}
+
+.half, .c6 {
 	@include break($b) {
 		@include column(6);
 	}
+}
+
+.c5 {
+	@include break($b) {
+		@include column(5);
+	}
+}
+
+.third, .c4 {
+	@include break($b) {
+		@include column(4);
+	}
+}
+
+.fourth, .c3 {
+	@include break($b) {
+		@include column(3);
+	}
+}
+
+.c2 {
+	@include break($b) {
+		@include column(2);
+	}
+}
+
+.c1 {
+	@include break($b) {
+		@include column(1);
+	}
+}
+
+.gut-r {
+	padding-right: 2%;
 }
 
 .cta {
@@ -362,7 +445,7 @@ section {
 
 .facebookWall .status{
 	@include break($b) {
-		width:420px;
+		width: 420px;
 		padding-left:65px;
 	}
 }
@@ -579,7 +662,11 @@ article {
 	margin-bottom: 25px;
 	clear: both;
 	width: 100%;
-	h1, h2, h3 {
+	section {
+		clear: both;
+	}
+	@include row(12);
+	h1, h2, h3, h4 {
 		color: $secondary;
 		font-weight: bold;
 		letter-spacing: 1px;
@@ -590,15 +677,44 @@ article {
 		font-size: em-font(25px);
 	}
 	h2 {
+		@extend .font-sans;
 		font-size: em-font(20px);
+			font-weight: lighter;
+			text-transform: uppercase;
+			// background-color: $primary;
+			border-bottom: 3px solid $primary;
+			padding: 10px 10px 10px 0;
 	}
 	h3 {
 		font-size: em-font(15px);
 		letter-spacing: 0;
+		@extend .font-sans;
+		text-transform: uppercase;
+		span {
+			font-size: em-font(12px);
+			display: block;
+			clear: both;
+			color: #ddd;
+			text-transform: normal;
+			font-weight: lighter;
+		}
+	}
+	h4 {
+		@extend .font-sans;
+		font-weight: lighter;
 	}
 	p {
 		margin-bottom: 10px;
 	}
+
+	ul {
+		li {
+			list-style-type: square;
+			margin-left: 20px;
+			margin-bottom: 10px;
+		}
+	}
+
 	img {
 		margin-bottom: 20px;
 		@include break($b) {
@@ -752,8 +868,25 @@ textarea:focus {
 	display: block;
 	width: 100%;
 	font-weight: bold;
+	margin-bottom: 10px;
+	padding:  15px;
 	@include break($b) {
 		font-weight: normal;
+	}
+}
+
+#inner-accordion {
+	.panel-title a {
+		text-transform: normal;
+		background-color: transparent;
+		color: $secondary;
+		padding: 10px;
+		border-bottom: 3px solid $primary;
+		border-top: 3px solid transparent;
+		&:hover {
+			border-top-color: $primary;
+			background-color: $primary;
+		}
 	}
 }
 
@@ -762,10 +895,61 @@ textarea:focus {
 	padding: 2%;
 }
 
-.panel-title a {
-	margin-bottom: 10px;
-	padding:  15px;
+.clear {
+	clear: both;
 }
+
+blockquote {
+	@include column(12);
+	color: #000;
+	background-color: $primary;
+	padding: 3%;
+	padding-bottom: 5%;
+	margin-bottom: 30px;
+	font-size: em-font(20px);
+	position: relative;
+	border-left: 5px solid $secondary;
+	// @include break($d) {
+	// 	@include column(12);
+	// 	margin-bottom: 30px;
+	// 	padding-bottom: 3%;
+	// }
+	small {
+		background-color: #ddd;
+		float: right;
+		padding: 2%;
+		position: absolute;
+		bottom: -15px;
+		right: 3%;
+		text-transform: uppercase;
+		font-size: em-font(10px);
+		&:before {
+			content: '~ ';
+		}
+	}
+}
+
+// blockquote {
+// 	@include column(6);
+// 	color: #000;
+// 	background-color: $primary;
+// 	padding: 3%;
+// 	font-size: em-font(20px);
+// 	margin-bottom: 20px;
+// 	small {
+// 		background-color: #ddd;
+// 		width: 114%;
+// 		padding: 3% 7% 3% 0;
+// 		margin: 7% 0 -8% -7%;
+// 		display: block;
+// 		text-transform: uppercase;
+// 		font-size: em-font(10px);
+// 		text-align: right;
+// 		&:before {
+// 			content: '~ ';
+// 		}
+// 	}
+// }
 
 
 /* ::Import styles */

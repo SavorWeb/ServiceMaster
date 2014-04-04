@@ -36,7 +36,7 @@ $(document).ready(function(){
 		// Default options of the plugin:
 		
 		options = $.extend({
-			limit: 2	// You can also pass a custom limit as a parameter.
+			limit: 1	// You can also pass a custom limit as a parameter.
 		},options);
 
 		// Putting together the Facebook Graph API URLs:

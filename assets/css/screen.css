@@ -284,6 +284,17 @@ body {
   color: #777777;
 }
 
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
 a {
   color: #00a7b8;
   text-decoration: none;
@@ -552,7 +563,15 @@ img {
 }
 
 .padded {
+  display: inline;
+  float: left;
+  width: 97.9166667%;
+  margin: 0 1.0416667%;
   padding: 4%;
+}
+.padded.home {
+  width: 100%;
+  margin: 0;
 }
 .lt-ie9 .padded {
   *zoom: 1;
@@ -661,25 +680,188 @@ header .callnow {
 }
 
 section {
+  display: block;
+  padding: 10px 0 0;
+}
+
+.full, .half, .third, .fourth {
+  margin-bottom: 20px;
+}
+
+.full, .c12 {
   display: inline;
   float: left;
   width: 97.9166667%;
   margin: 0 1.0416667%;
-  padding: 10px 0 0;
 }
-.lt-ie9 section {
+
+.lt-ie9 .c11 {
+  display: inline;
+  float: left;
+  width: 89.5833333%;
+  margin: 0 1.0416667%;
+}
+@media screen and (min-width: 850px) {
+  .c11 {
+    display: inline;
+    float: left;
+    width: 89.5833333%;
+    margin: 0 1.0416667%;
+  }
+}
+
+.lt-ie9 .c10 {
+  display: inline;
+  float: left;
+  width: 81.25%;
+  margin: 0 1.0416667%;
+}
+@media screen and (min-width: 850px) {
+  .c10 {
+    display: inline;
+    float: left;
+    width: 81.25%;
+    margin: 0 1.0416667%;
+  }
+}
+
+.lt-ie9 .c9 {
+  display: inline;
+  float: left;
+  width: 72.9166667%;
+  margin: 0 1.0416667%;
+}
+@media screen and (min-width: 850px) {
+  .c9 {
+    display: inline;
+    float: left;
+    width: 72.9166667%;
+    margin: 0 1.0416667%;
+  }
+}
+
+.lt-ie9 .c8 {
+  display: inline;
+  float: left;
+  width: 64.5833333%;
+  margin: 0 1.0416667%;
+}
+@media screen and (min-width: 850px) {
+  .c8 {
+    display: inline;
+    float: left;
+    width: 64.5833333%;
+    margin: 0 1.0416667%;
+  }
+}
+
+.lt-ie9 .c7 {
+  display: inline;
+  float: left;
+  width: 56.25%;
+  margin: 0 1.0416667%;
+}
+@media screen and (min-width: 850px) {
+  .c7 {
+    display: inline;
+    float: left;
+    width: 56.25%;
+    margin: 0 1.0416667%;
+  }
+}
+
+.lt-ie9 .half, .lt-ie9 .c6 {
   display: inline;
   float: left;
   width: 47.9166667%;
   margin: 0 1.0416667%;
 }
 @media screen and (min-width: 850px) {
-  section {
+  .half, .c6 {
     display: inline;
     float: left;
     width: 47.9166667%;
     margin: 0 1.0416667%;
   }
+}
+
+.lt-ie9 .c5 {
+  display: inline;
+  float: left;
+  width: 39.5833333%;
+  margin: 0 1.0416667%;
+}
+@media screen and (min-width: 850px) {
+  .c5 {
+    display: inline;
+    float: left;
+    width: 39.5833333%;
+    margin: 0 1.0416667%;
+  }
+}
+
+.lt-ie9 .third, .lt-ie9 .c4 {
+  display: inline;
+  float: left;
+  width: 31.25%;
+  margin: 0 1.0416667%;
+}
+@media screen and (min-width: 850px) {
+  .third, .c4 {
+    display: inline;
+    float: left;
+    width: 31.25%;
+    margin: 0 1.0416667%;
+  }
+}
+
+.lt-ie9 .fourth, .lt-ie9 .c3 {
+  display: inline;
+  float: left;
+  width: 22.9166667%;
+  margin: 0 1.0416667%;
+}
+@media screen and (min-width: 850px) {
+  .fourth, .c3 {
+    display: inline;
+    float: left;
+    width: 22.9166667%;
+    margin: 0 1.0416667%;
+  }
+}
+
+.lt-ie9 .c2 {
+  display: inline;
+  float: left;
+  width: 14.5833333%;
+  margin: 0 1.0416667%;
+}
+@media screen and (min-width: 850px) {
+  .c2 {
+    display: inline;
+    float: left;
+    width: 14.5833333%;
+    margin: 0 1.0416667%;
+  }
+}
+
+.lt-ie9 .c1 {
+  display: inline;
+  float: left;
+  width: 6.25%;
+  margin: 0 1.0416667%;
+}
+@media screen and (min-width: 850px) {
+  .c1 {
+    display: inline;
+    float: left;
+    width: 6.25%;
+    margin: 0 1.0416667%;
+  }
+}
+
+.gut-r {
+  padding-right: 2%;
 }
 
 .cta .featured {
@@ -1108,8 +1290,22 @@ article {
   margin-bottom: 25px;
   clear: both;
   width: 100%;
+  display: block;
+  width: 102.0833333%;
+  margin: 0 -1.0416667%;
+  *zoom: 1;
 }
-article h1, article aside h2, aside article h2, article h2, article h3 {
+article section {
+  clear: both;
+}
+article:before, article:after {
+  content: "";
+  display: table;
+}
+article:after {
+  clear: both;
+}
+article h1, article aside h2, aside article h2, article h2, article h3, article h4 {
   color: #00a7b8;
   font-weight: bold;
   letter-spacing: 1px;
@@ -1120,12 +1316,33 @@ article h1, article aside h2, aside article h2 {
 }
 article h2 {
   font-size: 1.25em;
+  font-weight: lighter;
+  text-transform: uppercase;
+  border-bottom: 3px solid #ffee50;
+  padding: 10px 10px 10px 0;
 }
 article h3 {
   font-size: 0.9375em;
   letter-spacing: 0;
+  text-transform: uppercase;
+}
+article h3 span {
+  font-size: 0.75em;
+  display: block;
+  clear: both;
+  color: #ddd;
+  text-transform: normal;
+  font-weight: lighter;
+}
+article h4 {
+  font-weight: lighter;
 }
 article p {
+  margin-bottom: 10px;
+}
+article ul li {
+  list-style-type: square;
+  margin-left: 20px;
   margin-bottom: 10px;
 }
 article img {
@@ -1340,6 +1557,8 @@ textarea:focus {
   display: block;
   width: 100%;
   font-weight: bold;
+  margin-bottom: 10px;
+  padding: 15px;
 }
 .lt-ie9 .panel-title a {
   font-weight: normal;
@@ -1350,14 +1569,54 @@ textarea:focus {
   }
 }
 
+#inner-accordion .panel-title a {
+  text-transform: normal;
+  background-color: transparent;
+  color: #00a7b8;
+  padding: 10px;
+  border-bottom: 3px solid #ffee50;
+  border-top: 3px solid transparent;
+}
+#inner-accordion .panel-title a:hover {
+  border-top-color: #ffee50;
+  background-color: #ffee50;
+}
+
 .panel-body {
   margin-bottom: 10px;
   padding: 2%;
 }
 
-.panel-title a {
-  margin-bottom: 10px;
-  padding: 15px;
+.clear {
+  clear: both;
+}
+
+blockquote {
+  display: inline;
+  float: left;
+  width: 97.9166667%;
+  margin: 0 1.0416667%;
+  color: #000;
+  background-color: #ffee50;
+  padding: 3%;
+  padding-bottom: 5%;
+  margin-bottom: 30px;
+  font-size: 1.25em;
+  position: relative;
+  border-left: 5px solid #00a7b8;
+}
+blockquote small {
+  background-color: #ddd;
+  float: right;
+  padding: 2%;
+  position: absolute;
+  bottom: -15px;
+  right: 3%;
+  text-transform: uppercase;
+  font-size: 0.625em;
+}
+blockquote small:before {
+  content: '~ ';
 }
 
 /* ::Import styles */
@@ -1366,7 +1625,7 @@ textarea:focus {
   font-family: 'Baskerville', times, serif;
 }
 
-.font-sans, .callnow, header .callnow, footer, aside {
+.font-sans, .callnow, header .callnow, footer, article h2, article h3, article h4, aside {
   font-family: Helvetica, 'Helvetica', Arial, sans-serif;
 }
 
