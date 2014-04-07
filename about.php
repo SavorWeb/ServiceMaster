@@ -119,7 +119,7 @@ So no matter what the emergency - water, sewage, fire or smoke damage, trauma /v
 </section>
 
 <section>
-<h1>Meet the Team</h1>
+<div class="full"><h1>Meet the Team</h1></div>
 
 <div class="c4"><h3>Kelly Norton <span>– Owner</span></h3>
 	<p>Kelly has been with SMNI since 2007. Kelly has over 20 years of experience in the disaster restoration business. He is IICRC certified in Water, Fire & Smoke Damage Restoration, and Applied Structural Drying. He also is a certified Asbestos Hazard Emergency Response Act (AHERA) Building Inspector. He is a very active member of our local football community and can be found coaching from the sidelines of a game on any given weekend.</p></div>
@@ -160,9 +160,11 @@ So no matter what the emergency - water, sewage, fire or smoke damage, trauma /v
 <section>
 <div class="full">
 <h1>Employment Opportunities</h1>
-<p>We here at ServiceMaster of North Idaho believe that each employee contributes directly to the company’s growth and success, and we are passionate about finding great employees that believe in our values and mission. It is our primary goal when recruiting new employees to fill vacancies with persons who have the best available skills, abilities, or experience needed to perform the work.  We are an equal opportunity employer and decisions regarding the recruitment, selection, and placement of employees are made on the basis of job-related criteria only. </p>
+<p>We here at ServiceMaster of North Idaho believe that each employee contributes directly to the company’s growth and success, and we are passionate about finding great employees that believe in our values and mission. It is our primary goal when recruiting new employees to fill vacancies with persons who have the best available skills, abilities, or experience needed to perform the work. We are an equal opportunity employer and decisions regarding the recruitment, selection, and placement of employees are made on the basis of job-related criteria only.</p>
 
-<p>We are always accepting applications so please feel free to download a copy of the application and turn it in! </p>
+<p>We are always accepting applications so please feel free to download a copy of the application and turn it in!</p>
+
+<p>Job seekers can email us at <a href="hr@smnorthidaho.com">hr@smnorthidaho.com</a></p>
 </div>
 </section>
 

@@ -571,7 +571,7 @@ img {
 }
 .padded.home {
   width: 100%;
-  margin: 0;
+  margin: 0 0 20px;
 }
 .lt-ie9 .padded {
   *zoom: 1;
@@ -1144,6 +1144,8 @@ address span {
   margin-left: 15px;
 }
 .lt-ie9 #newsletter h2 {
+  display: inline;
+  margin-right: 10px;
   text-align: left;
 }
 @media screen and (min-width: 850px) {
@@ -1153,7 +1155,32 @@ address span {
     margin-left: 15px;
   }
   #newsletter h2 {
+    display: inline;
+    margin-right: 10px;
     text-align: left;
+  }
+}
+#newsletter .button {
+  background-color: #00a7b8;
+  padding: 12px 10px 10px;
+  color: white;
+  width: 100%;
+  display: block;
+  text-indent: 15px;
+}
+#newsletter .button:hover {
+  background-color: #00d5eb;
+}
+.lt-ie9 #newsletter .button {
+  display: inline;
+  text-indent: 0;
+  width: auto;
+}
+@media screen and (min-width: 1100px) {
+  #newsletter .button {
+    display: inline;
+    text-indent: 0;
+    width: auto;
   }
 }
 #newsletter button[type="submit"] {
@@ -1296,6 +1323,14 @@ article {
   *zoom: 1;
 }
 article section {
+  clear: both;
+  *zoom: 1;
+}
+article section:before, article section:after {
+  content: "";
+  display: table;
+}
+article section:after {
   clear: both;
 }
 article:before, article:after {

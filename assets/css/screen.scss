@@ -223,7 +223,7 @@ $total-width: 100%;
 	@include column(12);
 	&.home {
 		width: 100%;
-		margin: 0;
+		margin: 0 0 20px;
 	}
 	padding: 4%;
 	@include break($b) {
@@ -566,7 +566,24 @@ address {
 		display: inline-block;
 		width: auto;
 		margin-left: 15px;
-		h2 {text-align: left;}
+		h2 {display: inline; margin-right: 10px; text-align: left;}
+	}
+	.button {
+		background-color: $secondary;
+		padding: 12px 10px 10px;
+		color: white;
+		width: 100%;
+		display: block;
+		text-indent: 15px;
+		&:hover {
+			background-color: lighten($secondary, 10%);
+		}
+		@include break($d) {
+			display: inline;
+			text-indent: 0;
+			width: auto;
+
+		}
 	}
 	button[type="submit"] {
 		@include column(2);
@@ -664,6 +681,7 @@ article {
 	width: 100%;
 	section {
 		clear: both;
+		@include clearfix;
 	}
 	@include row(12);
 	h1, h2, h3, h4 {

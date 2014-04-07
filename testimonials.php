@@ -15,7 +15,7 @@
 					
 					<p>Below are just a few comments from our past customers. As you can see we work hard to provide the best level of service in all that we do.</p>
 				</div>
-				<section class="half">
+				<div class="half">
 					<blockquote>Quick response both initially and when dealing with the insurance company. Quality work with minimal disruptions to the household. Thanks to everyone for the great customer service.
 						<small>Emily McManaway</small>
 					</blockquote>
@@ -31,8 +31,8 @@
 					<blockquote>Everyone has been extremely helpful and wonderful to work with during this process. Since my husband and I live out of state, it’s a huge relief to have a company dependable and reliable to complete a project. 
 						<small>J.L.</small>
 					</blockquote>
-				</section>
-				<section class="half">
+				</div>
+				<div class="half">
 					<blockquote>Prompt, professional service and frequent updates
 						<small>Dick Shern</small>
 					</blockquote>
@@ -48,7 +48,7 @@
 					<blockquote>Thanks for a job well done by a group of great guys.
 						<small>Bill & Wilma Mason</small>
 					</blockquote>
-				</section>
+				</div>
 				<p align="center" class="clear">For more testimonials visit our customer feedback page.</p>
 
 			</article>
