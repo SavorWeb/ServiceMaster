@@ -164,7 +164,7 @@ So no matter what the emergency - water, sewage, fire or smoke damage, trauma /v
 
 <p>We are always accepting applications so please feel free to download a copy of the application and turn it in!</p>
 
-<p>Job seekers can email us at <a href="hr@smnorthidaho.com">hr@smnorthidaho.com</a></p>
+<p>Download: <a href="assets/docs/SM_Application_for_Employment.pdf">Employment Application</a></p>
 </div>
 </section>
 
