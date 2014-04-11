@@ -3,7 +3,7 @@
 	<div class="wrapper">
 	
 	<div class="pageimg">
-		<img src="assets/img/hallway.jpg" alt="A Service Master!">
+		<img src="assets/photos/truckwindow.jpg" alt="A Service Master!">
 	</div>
 
 	<div class="padded"> <!-- START CONTENT -->
@@ -24,6 +24,7 @@
 </ul>
 
 <h1>Our Values</h1>
+<img src="assets/photos/serviceboxes.jpg" alt="Service Professionals Unpacking Equipment">
 <ul>
 <li>
 Professionalism: is a welcoming behavior image coupled with knowledge and expertise to generate confidence in our customers and co-workers.
@@ -73,6 +74,7 @@ So no matter what the emergency - water, sewage, fire or smoke damage, trauma /v
 
 <div class="full">
 <h1>Awards</h1>
+<img src="assets/photos/van.jpg" alt="">
 <ul>
 	<li>Marion E Wade Achiever Award 2002</li>
 	<li>President’s Achievement Award 2007</li>
@@ -160,6 +162,7 @@ So no matter what the emergency - water, sewage, fire or smoke damage, trauma /v
 <section>
 <div class="full">
 <h1>Employment Opportunities</h1>
+<img src="assets/photos/bwtech.jpg" alt="">
 <p>We here at ServiceMaster of North Idaho believe that each employee contributes directly to the company’s growth and success, and we are passionate about finding great employees that believe in our values and mission. It is our primary goal when recruiting new employees to fill vacancies with persons who have the best available skills, abilities, or experience needed to perform the work. We are an equal opportunity employer and decisions regarding the recruitment, selection, and placement of employees are made on the basis of job-related criteria only.</p>
 
 <p>We are always accepting applications so please feel free to download a copy of the application and turn it in!</p>

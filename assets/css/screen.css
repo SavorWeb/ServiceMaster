@@ -1381,6 +1381,17 @@ article ul li {
   margin-bottom: 10px;
 }
 article img {
+  border-bottom: 3px #ffee50 solid;
+  *zoom: 1;
+}
+article img:before, article img:after {
+  content: "";
+  display: table;
+}
+article img:after {
+  clear: both;
+}
+article img {
   margin-bottom: 20px;
 }
 .lt-ie9 article img {
@@ -1588,12 +1599,14 @@ textarea:focus {
 }
 
 .panel-title a {
-  background-color: #ffee50;
+  border-top: #ffee50 2px solid;
   display: block;
   width: 100%;
-  font-weight: bold;
-  margin-bottom: 10px;
-  padding: 15px;
+  padding: 8px;
+}
+.panel-title a:hover {
+  border-top-color: #ffee50;
+  background-color: #ffee50;
 }
 .lt-ie9 .panel-title a {
   font-weight: normal;
@@ -1618,8 +1631,7 @@ textarea:focus {
 }
 
 .panel-body {
-  margin-bottom: 10px;
-  padding: 2%;
+  padding: 0px 8px 8px;
 }
 
 .clear {

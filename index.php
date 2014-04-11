@@ -5,8 +5,8 @@
 	<div id='slider' class='swipe'>
 	  <div class='swipe-wrap'>
 	    <div><img src="assets/img/techcustomer.jpg" alt=""></div>
-	    <div><img src="assets/img/techenter.jpg" alt=""></div>
-	    <div><img src="assets/img/truckguy.jpg" alt=""></div>
+	    <div><img src="assets/photos/abovetrucks.jpg" alt=""></div>
+	    <div><img src="assets/photos/enterbuilding.jpg" alt=""></div>
 	  </div>
 	</div>
 
