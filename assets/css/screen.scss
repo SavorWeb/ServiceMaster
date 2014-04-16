@@ -963,7 +963,9 @@ blockquote {
 	// 	margin-bottom: 30px;
 	// 	padding-bottom: 3%;
 	// }
-	small {
+	i, .t-name {
+		font-style: normal;
+		@extend .font-sans;
 		background-color: #ddd;
 		float: right;
 		padding: 2%;

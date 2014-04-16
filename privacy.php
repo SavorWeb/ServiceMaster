@@ -3,14 +3,14 @@
 <div class="wrapper">
 	
 	<div class="pageimg">
-		<img src="assets/img/truckguy.jpg" alt="A Service Master!">
+		<img class="editable" id="header-img" src="assets/img/truckguy.jpg" alt="A Service Master!">
 	</div>
 
 	<div class="padded"> <!-- START CONTENT -->
 		
 		<section>
-		<article class="editable">
-			<div class="full">
+		<article>
+			<div class="full editable" id="legal-1">
 				<h1>Privacy Policy</h1>
 
 				<p>
@@ -21,7 +21,7 @@
 					The privacy policy below describes how and when ServiceMaster of North Idaho (SMNI) collects and uses your information when you use our website.
 				</p>
 			</div>
-			<div class="half">
+			<div class="half editable" id="legal-2">
 				<h2>What Information Do We Collect?</h2>
 				<p>
 					We collection and use information we need to conduct our business, to advise you of our products and services, and to provide you with customer service. We may collect and maintain several types of information needed for these purposes, such as those below:
@@ -36,7 +36,7 @@
 				</p>
 			</div>
 
-			<div class="half">
+			<div class="half editable" id="legal-3">
 				<h2>How We May Use Your Information</h2>
 				<p>
 					We use your PII information to process your claims, ensure proper billing, service your job, enhance your customer experience, and offer your additional services that may suit your needs.
@@ -51,7 +51,7 @@
 					We may share information about you with persons or organizations outside of our company for our everyday business purposes and as permitted or required by law. We may also share information with other entities as needed to handle your job, such as subcontractors.
 				</p>
 			</div>
-			<section>
+			<section class="full editable" id="last">
 				<h2>Instruction to Opt-Out/Modify of Future Communications</h2>
 				<p>
 					You may request to opt-out/modify future communications by sending an e-mail to office@smnorthidaho.com or by mailing your request to: 1007 N Boulder Court Post Falls ID 83854. Please specify the nature of your request.

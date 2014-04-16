@@ -3,13 +3,13 @@
 <div class="wrapper">
 	
 	<div class="pageimg">
-		<img src="assets/photos/abovetrucks.jpg" alt="A Service Master!">
+		<img class="editable" id="header-img" src="assets/photos/abovetrucks.jpg" alt="A Service Master!">
 	</div>
 
 	<div class="padded"> <!-- START CONTENT -->
 		
 		<section class="aside-layout">
-			<article class="editable">
+			<article id="claim-content" class="editable">
 				<h1>Claims</h1>
 				<img src="assets/photos/manwoman.jpg" alt="">
 				<p>ServiceMaster of North Idaho (SMNI) works with all insurance companies to restore losses back to pre-loss condition. We work directly with your insurance company, your claims adjusters, and we keep communication open with you for the entire process.  
@@ -55,63 +55,65 @@
 
 		</article>
 	</section>
-	<aside>
+	<div id="sidebar" class="editable">
+	<aside class="repeatable">
 		<h2>State Farm Claims Center</h2>
 		<ul>
 			<li><a href="www.statefarm.com/claims">Visit Website</a></li>
 			<li><a class="tel" href="tel:8007828332">(800) 782-8332</a></li>
 		</ul>
 	</aside>
-	<aside>
+	<aside class="repeatable">
 		<h2>Farmers Help Point Claims Services</h2>
 		<ul>
 			<li><a href="www.farmers.com/claims">Visit Website</a></li>
 			<li><a class="tel" href="tel:8007828332">(800) 435-7764</a></li>
 		</ul>
 	</aside>
-	<aside>
+	<aside class="repeatable">
 		<h2>Allstate Claims</h2>
 		<ul>
 			<li><a href="www.allstate.com/claims.aspx">Visit Website</a></li>
 			<li><a class="tel" href="tel:8007828332">(800) 255-7828</a></li>
 		</ul>
 	</aside>
-	<aside>
+	<aside class="repeatable">
 		<h2>Metlife Superior Claims Service</h2>
 		<ul>
 			<li><a href="www.metlife.com/individual/insurance/home-insurance/superior-claims-service.html">Visit Website</a></li>
 			<li><a class="tel" href="tel:8007828332">(800) 854-6011</a></li>
 		</ul>
 	</aside>
-	<aside>
+	<aside class="repeatable">
 		<h2>Nationwide Claims Center</h2>
 		<ul>
 			<li><a href="www.nationwide.com/insurance-claims-center.jsp">Visit Website</a></li>
 			<li><a class="tel" href="tel:8007828332">(877) 669-6877</a></li>
 		</ul>
 	</aside>
-	<aside>
+	<aside class="repeatable">
 		<h2>Travelers Claims Center</h2>
 		<ul>
 			<li><a href="www.travelers.com/claim/index.aspx">Visit Website</a></li>
 			<li><a class="tel" href="tel:8007828332">(800) 252-4633</a></li>
 		</ul>
 	</aside>
-	<aside>
+	<aside class="repeatable">
 		<h2>Safeco Claims Center</h2>
 		<ul>
 			<li><a href="www.safeco.com/claims-center">Visit Website</a></li>
 			<li><a class="tel" href="tel:8007828332">(800) 332-3226</a></li>
 		</ul>
 	</aside>
-	<aside>
+	<aside class="repeatable">
 		<h2>Mutual of Enumclaw</h2>
 		<ul>
 			<li><a href="http://www.mutualofenumclaw.com/">Visit Website</a></li>
 			<li><a class="tel" href="tel:8007828332">(800) 366-5551</a></li>
 		</ul>
 	</aside>
-
+		
+	</div>
 
 </div> <!-- END MAIN CONTENT -->
 

@@ -3,7 +3,7 @@
 	<div class="wrapper">
 	
 	<div class="pageimg">
-		<img src="assets/img/techcustomer.jpg" alt="A Service Master!">
+		<img id="header-img" class="editable" src="assets/img/techcustomer.jpg" alt="A Service Master!">
 	</div>
 
 	<div class="padded"> <!-- START CONTENT -->
@@ -66,8 +66,8 @@
 		      <?php } ?><!-- End #contact -->
 			</article>
 		</section>
-
-		<aside>
+	<div id="sidebar" class="editable">
+		<aside class="repeatable">
 			<h2>Helpful Links</h2>
 			<ul>
 				<li><a href="http://www.servicemasterclean.com/locator/franchiselocator2.aspx">Locate a ServiceMaster</a></li>
@@ -76,7 +76,7 @@
 				<li><a href="http://www.spokanecleanair.org">Spokane Regional Clean Air Agency</a></li>
 			</ul>
 		</aside>
-
+</div>
 
 	</div> <!-- END MAIN CONTENT -->
 

@@ -3,16 +3,16 @@
 	<div id="Home" class="wrapper">
 
 	<div id='slider' class='swipe'>
-	  <div class='swipe-wrap'>
-	    <div><img src="assets/img/techcustomer.jpg" alt=""></div>
-	    <div><img src="assets/photos/abovetrucks.jpg" alt=""></div>
-	    <div><img src="assets/photos/enterbuilding.jpg" alt=""></div>
+	  <div id="slider-pictures" class='swipe-wrap editable'>
+	    <div class="repeatable"><img src="assets/img/techcustomer.jpg" alt=""></div>
+	    <div class="repeatable"><img src="assets/photos/abovetrucks.jpg" alt=""></div>
+	    <div class="repeatable"><img src="assets/photos/enterbuilding.jpg" alt=""></div>
 	  </div>
 	</div>
 
 	<div class="padded home">
 
-		<div class="callnow">
+		<div id="callnow-mobile" class="callnow editable">
 			<h1>We're here for you 24/7</h1>
 			<a class="btn" href="tel:2086676633">Idaho Hotline: (208) 667-6633</a>
 			<a class="btn" href="tel:5099279416">Spokane Hotline: (509) 927-9416</a>
@@ -21,15 +21,15 @@
 		<section class="half cta">
 			<a class="featured" href="current-projects.php">
 				<figure>
-					<img src="assets/img/hallway.jpg" alt="">
+					<img class="editable" id="1st-cta-photo" src="assets/img/hallway.jpg" alt="">
 				</figure>
-				<h2>Current Projects</h2>
+				<h2 class="editable" id="1st-cta">Current Projects</h2>
 			</a>
 			<a class="featured" href="testimonials.php">
 				<figure>
-					<img src="assets/img/airmover.jpg" alt="">
+					<img class="editable" id="2nd-cta-photo" src="assets/photos/manwoman.jpg" alt="">
 				</figure>
-				<h2>Testimonials</h2>
+				<h2 class="editable" id="2nd-cta">Testimonials</h2>
 			</a>
 			
 			<a href="prevention.php" class="half tips">

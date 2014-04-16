@@ -3,15 +3,15 @@
 <div class="wrapper">
 	
 	<div class="pageimg">
-		<img src="assets/img/truckguy.jpg" alt="A Service Master!">
+		<img class="editable" id="header-img" src="assets/img/truckguy.jpg" alt="A Service Master!">
 	</div>
 
 	<div class="padded"> <!-- START CONTENT -->
 		
 		<section>
-			<article class="editable">
+			<article>
 				
-				<div class="full">
+				<div id="initial-head" class="full editable">
 					<h1>Help With Prevention</h1>
 
 
@@ -19,6 +19,7 @@
 
 				</div>
 				<div class="fourth">
+				<div id="prevent-1" class="editable">
 					<h3>Appliance Related Water Damages</h3>
 					<p>
 						Appliances can sprout leaks because of aging materials, improper connections or ruptured hoses. Water damage from appliances can be prevented by conducting routine maintenance of appliances that use water. Here are some general tips;
@@ -31,8 +32,9 @@
 						<li>Inspect pipes for condensation and corrosion</li>
 						<li>Pay attention to any sudden, significant increase to your water bill, which could indicate a leak</li>
 					</ul>
-					<div class="subtle panel-group" id="inner-accordion">
-						<div class="panel panel-default">
+					</div>
+					<div class="subtle panel-group editable" id="inner-accordion">
+						<div class="panel panel-default repeatable">
 							<div class="panel-heading">
 								<h4 class="panel-title">
 									<a data-toggle="collapse" data-parent="#inner-accordion" href="#inner-collapseOne">
@@ -52,7 +54,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="panel panel-default">
+						<div class="panel panel-default repeatable">
 							<div class="panel-heading">
 								<h4 class="panel-title">
 									<a data-toggle="collapse" data-parent="#inner-accordion" href="#inner-collapseTwo">
@@ -72,7 +74,7 @@
 							</div>
 						</div>
 
-						<div class="panel panel-default">
+						<div class="panel panel-default repeatable">
 							<div class="panel-heading">
 								<h4 class="panel-title">
 									<a data-toggle="collapse" data-parent="#inner-accordion" href="#inner-collapseThree">
@@ -90,7 +92,7 @@
 							</div>
 						</div>
 
-						<div class="panel panel-default">
+						<div class="panel panel-default repeatable">
 							<div class="panel-heading">
 								<h4 class="panel-title">
 									<a data-toggle="collapse" data-parent="#inner-accordion" href="#inner-collapseFour">
@@ -113,7 +115,7 @@
 				</div>
 
 
-				<div class="fourth">
+				<div id="prevent-2" class="fourth editable">
 					<h3>Frozen Pipes</h3>
 					<p>
 						The water inside pipes can freeze when outdoor temperatures drop below freezing. As freezing water expands, it causes the pressure inside the pipes to increase, possibly leading to bursting pipes. Here are some tips for preventing frozen pipes:
@@ -133,7 +135,8 @@
 				</div>
 
 
-				<div class="fourth"><h3>Ice Dams</h3>
+				<div id="prevent-3" class="fourth editable">
+					<h3>Ice Dams</h3>
 					<p>
 						Ice dams form when melting ice and snow refreeze above the eaves of your roof and subsequent melting backs up under the shingles. This causes interior leaks and water damage to interior walls and ceilings.
 					</p>
@@ -155,7 +158,7 @@
 					</ul>
 				</div>
 
-				<div class="fourth">
+				<div id="prevent-4" class="fourth editable">
 					<h3>Water Backup</h3>
 					<p>
 						Water backup occurs when the water around the foundation of your home exceeds the capacity of removal systems to drain it. It can occur from surface water seeping into foundation walls or sewer systems overflowing up through drains in the basement. Below we have listed some tips for keeping your home safe from water backup.
@@ -174,7 +177,7 @@
 				</div>
 
 				<section>
-					<div class="half">
+					<div id="prevent-5" class="half editable">
 						<h2>Mold</h2>
 
 						<p>When excessive moisture accumulates in buildings or on building materials, mold growth will often occur, particularly if the moisture problem remains undiscovered or unaddressed.</p>
@@ -195,7 +198,7 @@
 							<li>Dry water-damaged areas and items within 24-48 hours to prevent mold growth</li>
 						</ul>
 					</div>
-					<div class="half">
+					<div id="prevent-6" class="half editable">
 						<h2>Fire & Smoke Damage</h2>
 
 						<ul>
