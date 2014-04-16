@@ -19,32 +19,32 @@
 		</div>
 
 		<section class="half cta">
-			<a class="featured" href="current-projects.php">
+			<a class="featured" href="current-projects">
 				<figure>
 					<img class="editable" id="1st-cta-photo" src="assets/img/hallway.jpg" alt="">
 				</figure>
 				<h2 class="editable" id="1st-cta">Current Projects</h2>
 			</a>
-			<a class="featured" href="testimonials.php">
+			<a class="featured" href="testimonials">
 				<figure>
 					<img class="editable" id="2nd-cta-photo" src="assets/photos/manwoman.jpg" alt="">
 				</figure>
 				<h2 class="editable" id="2nd-cta">Testimonials</h2>
 			</a>
 			
-			<a href="prevention.php" class="half tips">
+			<a href="prevention" class="half tips">
 				<object type="image/svg+xml" data="assets/img/triangle.svg"></object>
 				<span>Help with <br> Prevention</span>
 			</a>
-			<a href="mitigation.php" class="tips">
+			<a href="mitigation" class="tips">
 				<object type="image/svg+xml" data="assets/img/triangle.svg"></object>
 				<span>Tips for <br> Mitigation</span>
 			</a>
-			<a href="privacy.php" class="tips">
+			<a href="privacy" class="tips">
 				<object type="image/svg+xml" data="assets/img/triangle.svg"></object>
 				<span>Privacy <br> Policy</span>
 			</a>
-			<a href="download-forms.php" class="tips">
+			<a href="download-forms" class="tips">
 				<object type="image/svg+xml" data="assets/img/triangle.svg"></object>
 				<span>Download <br> Forms</span>
 			</a>
