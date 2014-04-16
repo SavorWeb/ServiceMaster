@@ -632,7 +632,7 @@ header .callnow {
   display: block;
   position: absolute;
   right: 0;
-  top: 5px;
+  top: 2px;
   text-align: right;
 }
 .lt-ie9 header .callnow h1, .lt-ie9 header .callnow aside h2, aside .lt-ie9 header .callnow h2, .lt-ie9 header .callnow a, .lt-ie9 header .callnow span {
@@ -657,7 +657,7 @@ header .callnow {
     display: block;
     position: absolute;
     right: 0;
-    top: 5px;
+    top: 2px;
     text-align: right;
   }
   header .callnow h1, header .callnow aside h2, aside header .callnow h2, header .callnow a, header .callnow span {
@@ -677,6 +677,18 @@ header .callnow {
     border-left-width: 0;
     padding: 0;
   }
+}
+
+.sbtn {
+  display: block;
+  width: 20px;
+  position: relative;
+  top: 5px;
+  right: -5px;
+}
+.sbtn img {
+  width: auto;
+  max-width: 100%;
 }
 
 section {
@@ -1420,7 +1432,7 @@ article img {
 aside {
   *zoom: 1;
   clear: both;
-  margin-bottom: 30px;
+  margin-bottom: 17px;
   background-color: #00a7b8;
 }
 aside h2 {
@@ -1440,7 +1452,8 @@ aside:after {
   float: left;
   width: 22.9166667%;
   margin: 0 1.0416667%;
-  margin-bottom: 30px;
+  margin-bottom: 17px;
+  margin-left: 0;
   clear: none;
   height: 100%;
 }
@@ -1450,7 +1463,8 @@ aside:after {
     float: left;
     width: 22.9166667%;
     margin: 0 1.0416667%;
-    margin-bottom: 30px;
+    margin-bottom: 17px;
+    margin-left: 0;
     clear: none;
     height: 100%;
   }
@@ -1497,6 +1511,10 @@ aside ul li a:hover, aside ul li a:active {
   background-color: #00d5eb;
   border-left-color: #ffee50;
   color: white;
+}
+aside .tel:before {
+  content: "Tel: ";
+  color: #dedede;
 }
 
 .lt-ie9 #the-form, .lt-ie9 #contact-info {

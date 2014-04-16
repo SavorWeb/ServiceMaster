@@ -258,7 +258,7 @@ header .callnow {
 		display: block;
 		position: absolute;
 		right: 0;
-		top: 5px;
+		top: 2px;
 		text-align: right;
 		h1, a, span {font-size: em-font(12px); display: inline; clear: none;}
 		h1 {margin: 0; text-transform: normal;}
@@ -270,6 +270,18 @@ header .callnow {
 			border-left-width: 0;
 			padding: 0;
 		}
+	}
+}
+
+.sbtn {
+	display: block;
+	width: 20px;
+	position: relative;
+	top: 5px;
+	right: -5px;
+	img {
+		width: auto;
+		max-width: 100%;
 	}
 }
 
@@ -761,12 +773,13 @@ aside {
 	}
 	@include clearfix;
 	clear: both;
-	margin-bottom: 30px;
+	margin-bottom: 17px;
 	background-color: $secondary;
 	@extend .font-sans;
 	@include break($b) {
 		@include column(3);
-		margin-bottom: 30px;
+		margin-bottom: 17px;
+		margin-left: 0;
 		clear: none;
 		height: 100%;
 	}
@@ -802,6 +815,12 @@ aside {
 					color: $light;
 				}
 			}
+		}
+	}
+	.tel {
+		&:before {
+			content: "Tel: ";
+			color: darken($light, 13%);
 		}
 	}
 }
