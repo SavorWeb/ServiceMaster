@@ -1689,6 +1689,24 @@ blockquote i:before, blockquote .t-name:before {
   content: '~ ';
 }
 
+.editable-gallery li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 17px;
+  margin-bottom: 10px;
+}
+.editable-gallery li a img {
+  max-width: 100%;
+  float: none;
+  margin: 0;
+}
+
+.fancybox-title-float-wrap .child {
+  font-weight: normal !important;
+  letter-spacing: 1px;
+}
+
 /* ::Import styles */
 /* ------------------------------------------------------------ */
 .font-body, body {
