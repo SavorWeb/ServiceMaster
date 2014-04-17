@@ -352,6 +352,10 @@ img {
   }
 }
 
+ul.numbered li {
+  list-style-type: decimal;
+}
+
 .wrapper {
   max-width: 960px;
   margin: 0 auto;
