@@ -887,6 +887,7 @@ section {
 .cta .featured figure {
   overflow: hidden;
   height: 130px;
+  width: 100%;
 }
 .lt-ie9 .cta .featured {
   display: inline;

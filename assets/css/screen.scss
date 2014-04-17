@@ -380,6 +380,7 @@ section {
 		figure {
 			overflow: hidden;			
 			height: 130px;
+			width: 100%;
 		}
 		@include break($a) {
 			@include column(6);
