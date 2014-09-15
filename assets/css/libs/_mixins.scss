@@ -141,7 +141,7 @@ body {
 
 
 // Reference widths from settings file
-@mixin respond-to($media-min, $IE9: true) {
+@mixin break($media-min, $IE9: true) {
     @if $IE9 == true {
         .lt-ie9 & {
             @content;
@@ -157,7 +157,7 @@ body {
     }
 }
 
-@mixin respond-to-max($media-max, $IE9: true) {
+@mixin break-max($media-max, $IE9: true) {
     @if $IE9 == true {
         .lt-ie9 & {
             @content;
@@ -174,7 +174,7 @@ body {
 }
 
 
-@mixin respond-to-min-max($media-min, $media-max, $IE9: true) {
+@mixin break-min-max($media-min, $media-max, $IE9: true) {
     @if $IE9 == true {
         .lt-ie9 & {
             @content;

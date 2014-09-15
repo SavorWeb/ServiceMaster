@@ -4,11 +4,23 @@
   "convertHtmlOutput": null,
   "customRuby": false,
   "customRubyPath": null,
-  "customTodos": null,
+  "customTodos": [
+      {
+      "fileTypes": ".php",
+      "regex": "(?<=/[*] TODO:).*?(?=[*]/)"
+      }
+    ],
   "debug": false,
   "domain": null,
   "followLeader": true,
-  "ftpSettings": null,
+  "ftpSettings": {
+    "host": "client.savorweb.com",
+    "port": 21,
+    "username": "clie4036",
+    "password": "TwoCre@t1ve",
+    "path": "/sm/",
+    "secure": false
+  },
   "gitHubPages": null,
   "ignoreDir": "ignore",
   "less": null,
@@ -20,7 +32,7 @@
   "preprocessorLocations": "assets",
   "preprocessorScriptOutput": "assets/js",
   "preprocessorStyleOutput": "assets/css",
-  "projectDescription": "Sassaparilla",
+  "projectDescription": "Site for ServiceMaster",
   "projectName": "ServiceMaster",
   "publishedId": null,
   "remoteDebugPort": 8081,
@@ -35,16 +47,5 @@
   "templateDefaultPage": "index",
   "templateDirectory": "templates",
   "type": "simple",
-  "useCompass": true,
-
-  "ftpSettings": {
-  "host": "client.savorweb.com",
-  "port": 21,
-  "username": "clie4036",
-  "password": "TwoCre@t1ve",
-  "path": "sm/",
-  "secure": false
-}
-
-
+  "useCompass": true
 }
