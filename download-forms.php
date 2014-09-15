@@ -3,7 +3,7 @@
 <div class="wrapper">
 	
 	<div class="pageimg">
-		<img id="header-img" class="editable" src="assets/img/truckguy.jpg" alt="A Service Master!">
+		<img id="header-img" class="editable" src="assets/photos/rollouttruck.jpg" alt="A Service Master!">
 	</div>
 
 	<div class="padded"> <!-- START CONTENT -->
@@ -12,6 +12,7 @@
 			<article>
 				<div class="full editable">
 					<h1>Download Forms</h1>
+					<img src="assets/photos/promo/com-dr3.jpg" alt="">
 					<ul>
 					<li><a href="# ">Authorization for Repairs & Payment </a></li>
 					<li><a href="#">Mold Notification Form </a></li>

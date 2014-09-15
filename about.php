@@ -11,6 +11,7 @@
 		<article>
 			<section>
 				<div id="Opening-Statements" class="editable full">
+					<img src="assets/photos/promo/resident-dr1.jpg" alt="">
 					<h1>Our Mission</h1>
 					<p>Our mission is to be the first choice in all disaster restoration needs.  We do this by being a professional, client-centered team with integrity in all we do.  This provides a positive customer experience and instills “Peace of Mind”.</p>
 

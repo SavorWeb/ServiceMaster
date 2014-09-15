@@ -21,7 +21,7 @@
 			<p>In order to better help you understand some of the confusing terms that insurance companies sometimes use we have provided a list of terms and phrases with definitions below.</p>
 
 			<h3>RCV</h3>
-
+			<img src="assets/photos/promo/resident-dr3.jpg" alt="">
 			<p>The dollar amount needed to replace damaged personal property or dwelling property without deducting for depreciation but may be limited by the maximum dollar allowed by your policy.
 			</p>
 			<h3>ACV</h3>
@@ -41,7 +41,7 @@
 			<p>The amount held by the insurance carrier that is only able to be recovered or reimbursed to the homeowner if those expenses have actually been incurred. An itemized receipt, from the contractor, for all work completed is often required before any depreciation is released. The insurance company may also require a visual inspection of all completed work before realsing the depreciation check. 
 			</p>
 			<h3>Deductible</h3>
-
+			<img src="assets/photos/promo/resident-dr2.jpg" alt="">
 			<p>The amount for which the insured (you) is liable on each loss.
 			</p>
 			<h3>Personal Property</h3>

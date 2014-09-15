@@ -3,7 +3,7 @@
 <div class="wrapper">
 	
 	<div class="pageimg">
-		<img id="header-img" class="editable" src="assets/img/truckguy.jpg" alt="A Service Master!">
+		<img id="header-img" class="editable" src="assets/photos/enterbuilding.jpg" alt="A Service Master!">
 	</div>
 
 	<div class="padded"> <!-- START CONTENT -->
@@ -12,6 +12,7 @@
 			<article>
 				<div id="miti-1" class="editable full">
 					<h1>Tips to Prepare Mitigation & Restoration</h1>
+					<img src="assets/photos/promo/resident-dr3.jpg" alt="">
 					<p>When disaster unexpectedly damages your home, the first steps you take could mean the difference between a small clean up and more costly and time-consuming restoration.</p>
 					<p>Knowing when to call in professional can also save you time in getting your life back to normal and money by preventing further damage to your home. At ServiceMaster of North Idaho, we understand the damage goes below the surface. From our fast response, to our proven expertise, and our ongoing communication, we are committed to restoring your pace of mind. Follow these steps to help minimize damage, and call in the professionals you trust.</p>
 				</div>

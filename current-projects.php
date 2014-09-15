@@ -15,7 +15,7 @@
 					<div id="job-1" class="editable">
 						<h1>Job 1594</h1>
 
-						<p>Commerical production facility experience a fire sprinkler line break that flooded many areas of their facility.</p>
+						<p>Commerical production facility experienced a fire sprinkler line break that flooded many areas of their facility.</p>
 					</div>
 					<ul id="project-1" class="editable-gallery">
 					    <li><a href="assets/photos/current-projects/job-1594/1.jpg"><img src="assets/photos/current-projects/job-1594/1.jpg" alt="Using our injectidry sytem to dry this hallway without removing any wall material."></a></li>

@@ -3,7 +3,7 @@
 <div class="wrapper">
 	
 	<div class="pageimg">
-		<img class="editable" id="header-img" src="assets/img/truckguy.jpg" alt="A Service Master!">
+		<img class="editable" id="header-img" src="assets/photos/hardwood2.jpg" alt="A Service Master!">
 	</div>
 
 	<div class="padded"> <!-- START CONTENT -->
