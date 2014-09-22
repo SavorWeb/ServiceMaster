@@ -18,7 +18,7 @@
     "port": 21,
     "username": "clie4036",
     "password": "TwoCre@t1ve",
-    "path": "sm/",
+    "path": "/sm/",
     "secure": false
   },
   "gitHubPages": null,

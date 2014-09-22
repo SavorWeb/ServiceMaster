@@ -3,7 +3,7 @@
 <div class="wrapper">
 	
 	<div class="pageimg">
-		<img class="editable" id="header-img" src="assets/img/truckguy.jpg" alt="A Service Master!">
+		<img class="editable" id="header-img" src="assets/photos/hardhats.jpg" alt="A Service Master!">
 	</div>
 
 	<div class="padded"> <!-- START CONTENT -->
@@ -12,7 +12,7 @@
 		<article>
 			<div class="full editable" id="legal-1">
 				<h1>Privacy Policy</h1>
-
+				<img class="full-width" src="assets/photos/promo/restore-header.jpg" alt="">
 				<p>
 					Your privacy is important to us and we are committed to respecting it.  We maintain physical, electronic, and procedural safeguards that comply with federal regulations to guard you non-public information. In addition we regularly review our policies and practices, monitor our computer networks and test the strength of our security.
 				</p>

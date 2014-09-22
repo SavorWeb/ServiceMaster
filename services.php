@@ -13,6 +13,7 @@
 				<h1>Services</h1>
 
 				<h2>Disaster Restoration</h2>
+				<img src="assets/photos/promo/com-dr1.jpg" alt="">
 				<h3>Whether commerical or residential, all disasters have two things in common:</h3>
 				<ul>
 					<li>The faster emergency services are begun, the lower the total cost.</li>
@@ -61,6 +62,7 @@
 				</ul>
 
 				<h2>Trauma/Bio-Hazard</h2>
+				<img src="assets/photos/promo/com-dr2.jpg" alt="">
 				<p>SMNI specializes in all types of biohazardous cleaning and the removal and disposal of infectious waste. This includes crime scene cleaning, homicide or suicide clean up, and odor removal from any type of problems that arise from these traumatic experiences. </p>
 				<p>In the aftermath of a traumatic event, two things matter most: response time and level of experience. It takes a high level of dedication and professionalism to handle the rigors of violent crime and accident scenes on a daily basis. Our certified and well-trained technicians provide professional and prompt cleaning services and work to restore your property to a safe and healthy condition in as short of time as possible. Our technicians are certified to control blood-borne pathogens, utilize proper protective gear, and are equipped to handle and dispose of biological materials. </p>
 				<p>Dealing with trauma requires more than just professionalism. As such, we approach every job with respect and empathy for grieving families and loved ones. Our technicians are trained to handle sensitive questions with assurance and skill. We work with landlords, hotels, motels, and apartment complexes as well as commercial properties. We are also dedicated to assisting the law enforcement agencies, coroners, funeral homes, and public service agencies.</p>

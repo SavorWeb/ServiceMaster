@@ -49,7 +49,7 @@
 						<i>Bill & Wilma Mason</i>
 					</blockquote>
 				</div>
-				<p align="center" class="clear">For more testimonials visit our customer feedback page.</p>
+				<p align="center" class="clear">For more testimonials visit our <a href="http://app.listen360.com/organizations/7867/reviews/public">customer feedback page</a>.</p>
 
 			</article>
 		</section>
